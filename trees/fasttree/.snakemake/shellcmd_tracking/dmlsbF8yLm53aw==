@@ -1,0 +1,1 @@
+fasttree -nt -gtr ../../data/vill_2.fas > vill_2.nwk

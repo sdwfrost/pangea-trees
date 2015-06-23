@@ -1,0 +1,61 @@
+---
+title: "Munge data"
+author: "Simon Frost"
+date: "23 June 2015"
+output: html_document
+---
+
+Load libraries.
+
+```{r}
+library(ape)
+library(magrittr)
+```
+
+Village functions.
+
+```{r}
+# Clean names
+vill.procnames <- function(x){
+  x %>% strsplit(.,"_") %>% lapply(.,strsplit,"-") %>% lapply(.,"[[",1) %>% lapply(.,"[",c(1,2)) %>% lapply(.,paste,collapse="_") %>% unlist
+}
+# Extract times
+vill.proctimes <- function(x){
+  x %>% strsplit(.,"_") %>% lapply(.,tail,1) %>% unlist %>% as.double
+}
+# Rename sequences and tree
+vill.procfiles <- function(sq,tr,fn){
+  sq.newnames <- vill.procnames(row.names(sq))
+  sq.new <- sq
+  row.names(sq.new) <- sq.newnames
+  write.dna(sq.new,paste(fn,".fas",sep=""),format="fasta",nbcol=-1,colsep="")
+  write.dna(sq.new,paste(fn,".phy",sep=""),format="interleaved",nbcol=-1,colsep="")
+  tr.newnames <- vill.procnames(tr$tip.label)
+  tr.new <- tr
+  tr.new$tip.label <- tr.newnames
+  write.tree(tr.new,paste(fn,".tre",sep=""))
+  sq.times <- vill.proctimes(row.names(sq))
+  ann <- data.frame(oldid=row.names(sq),newid=sq.newnames,time=sq.times)
+  write.table(ann,paste(fn,".txt",sep=""),col.names=TRUE,row.names=FALSE,quote=F,sep="\t")
+}
+```
+
+Original training data.
+
+```{r}
+# Load data
+vill.train.seq <- read.dna("../simulations/Vill_99_Apr15/Vill_99_Apr15.fasta",format="fasta")
+vill.train.tree <- read.nexus("../simulations/Vill_99_Apr15/Vill_99_Apr15.nex")
+vill.procfiles(vill.train.seq,vill.train.tree,"vill_train")
+```
+
+Villages 1-4.
+
+```{r}
+for(i in 1:4){
+  vill.seq <- read.dna(sprintf("../simulations/Vill_0%s_Feb2015_5yr/Vill_0%s_Feb2015_5yr.fasta",i,i),format="fasta")
+  vill.tree <- read.nexus(sprintf("../simulations/Vill_1-4_TrueTrees/Vill_0%s_Feb2015.nex",i))
+  vill.procfiles(vill.seq,vill.tree,sprintf("vill_%s",i))
+}
+```
+
