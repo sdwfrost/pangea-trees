@@ -1,0 +1,32 @@
+rule all:
+    input:
+        "vill_train_gene_r20.nwk",
+        "vill_1_gene_r20.nwk",
+        "vill_2_gene_r20.nwk",
+        "vill_3_gene_r20.nwk",
+        "vill_4_gene_r20.nwk"
+
+rule cp:
+    input:
+        "{result}.treefile"
+    output:
+        "{result}.nwk"
+    shell:
+        "cat {input} > {output}"
+
+rule iqtree_gene_r20:
+    input:
+        "../../data/{dataset}.phy",
+	"vill_partition_gene_r20.nex",
+    output:
+        "{dataset}_gene_r20",
+        "{dataset}_gene_r20.treefile"
+    log:
+        "logs/iqtree_gene_r20.log"
+    threads:
+        4
+    message:
+        "Running IQTREE with gene partition and GTR+R20 on {input}"
+    shell:
+        "iqtree-omp -nt {threads} -s {input[0]} -spp {input[1]} -pre {output[0]}"
+
