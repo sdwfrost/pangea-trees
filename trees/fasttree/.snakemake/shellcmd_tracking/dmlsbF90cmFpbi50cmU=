@@ -1,0 +1,1 @@
+fasttree -nt -gtr ../../data/vill_train.fas > vill_train.tre

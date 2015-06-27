@@ -1,0 +1,17 @@
+---
+title: "Results"
+author: "Simon Frost"
+date: "27 June 2015"
+output: html_document
+---
+
+```{r}
+library(DT)
+```
+
+
+```{r}
+results <- read.table("results.txt",header=TRUE,row.names=NULL,sep="\t")
+datatable(results)
+```
+

@@ -1,0 +1,53 @@
+rule all:
+    input:
+        "RAxML_parsimonyTree.vill_train_startingTree",
+        "RAxML_parsimonyTree.vill_1_startingTree",
+        "RAxML_parsimonyTree.vill_2_startingTree",
+        "RAxML_parsimonyTree.vill_3_startingTree",
+        "RAxML_parsimonyTree.vill_4_startingTree"
+
+rule rename:
+    input:
+        "ExaML_result.{dataset}"
+    output:
+        "{dataset}.nwk"
+    shell:
+        "cat {input} > {output}"
+
+rule examl:
+    input:
+        "{dataset}.binary",
+        "RAxML_parsimonyTree.{dataset)_startingTree"
+    output:
+        "ExaML_result.{dataset}"
+    shell:
+        "mpirun -np 4 /usr/local/bin/examl -D -t {input[1]} -m PSR -s {input[0]} -n {dataset}"
+
+rule parsimonytree:
+    input:
+        "../../data/{dataset}.phy"
+    params:
+        prefix = "{dataset}_startingTree"
+    output:
+        "RAxML_parsimonyTree.{dataset}_startingTree"
+    log:
+        "logs/parsimonytree.log"
+    shell:
+        "/usr/local/bin/raxmlHPC-PTHREADS-SSE3 -y -m GTRCAT -p 12345 -s {input} -n {params.prefix}"
+
+rule parseexaml_gene:
+    input:
+        "../../data/{dataset}.phy",
+        "vill_partition_gene"
+    params:
+        prefix = "{dataset}_gene"
+    output:
+        "{dataset}_gene.binary",
+        temp("RAxML_info.{dataset}_gene")
+    log:
+        "logs/parseexaml_gene.log"
+    message:
+        "Parsing {dataset} into genes using parse-examl"
+    shell:
+        "/usr/local/bin/parse-examl -s {input[0]} -m DNA -q {input[1]} -n {params.prefix}"
+ 

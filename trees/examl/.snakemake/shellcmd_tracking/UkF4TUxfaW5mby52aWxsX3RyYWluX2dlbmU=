@@ -1,0 +1,1 @@
+/usr/local/bin/parse-examl -s ../../data/vill_train.phy -m DNA -q vill_partition_gene -n vill_train_gene

@@ -1,16 +1,16 @@
 rule all:
     input:
-        "vill_train.nwk",
-        "vill_1.nwk",
-        "vill_2.nwk",
-        "vill_3.nwk",
-        "vill_4.nwk"
+        "vill_train.tre",
+        "vill_1.tre",
+        "vill_2.tre",
+        "vill_3.tre",
+        "vill_4.tre"
 
 rule fasttree:
     input:
         "../../data/{dataset}.fas"
     output:
-        "{dataset}.nwk"
+        "{dataset}.tre"
     shell:
         "fasttree -nt -gtr {input} > {output}"
 

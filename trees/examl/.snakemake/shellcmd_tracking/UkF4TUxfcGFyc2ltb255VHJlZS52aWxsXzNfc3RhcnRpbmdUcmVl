@@ -1,0 +1,1 @@
+/usr/local/bin/raxmlHPC-PTHREADS-SSE3 -y -m GTRCAT -p 12345 -s ../../data/vill_3.phy -n vill_3_startingTree

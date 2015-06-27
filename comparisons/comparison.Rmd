@@ -1,0 +1,118 @@
+---
+title: "Compare trees"
+author: "Simon Frost"
+date: "26 June 2015"
+output: html_document
+---
+
+```{r}
+library(magrittr)
+library(ape)
+library(phangorn)
+```
+
+
+```{r}
+truetreefiles <- sort(list.files(path="../data/",pattern="tre"))
+stubs <- strsplit(truetreefiles,".tre") %>% unlist
+truetrees <- lapply(paste("../data/",truetreefiles,sep=""),read.tree)
+for(i in 1:length(truetrees)){
+  tr <- truetrees[[i]]
+  tl <- tr$tip.label
+  tl <- toupper(tl)
+  tr$tip.label <- tl
+  truetrees[[i]] <- tr
+}
+names(truetrees) <- stubs
+```
+
+```{r}
+algo <- c("fasttree","raxml")
+numalgo <- length(algo)
+```
+
+
+```{r}
+vill.procnames <- function(x){
+  x %>% strsplit(.,"_") %>% lapply(.,strsplit,"-") %>% lapply(.,"[[",1) %>% lapply(.,"[",c(1,2)) %>% lapply(.,paste,collapse="_") %>% unlist
+}
+```
+
+
+```{r}
+key <- list()
+treedf <- data.frame(algo=character(),treefilename=character(),tree=character(),truetree=character())
+for(i in 1:length(algo)){
+  treefiles <- sort(list.files(path=paste("../trees/",algo[i],sep=""),pattern="tre|newick|nwk"))
+  trees <- lapply(paste("../trees/",algo[i],"/",treefiles,sep=""),read.tree)
+  # Munge labels if necessary
+  if(algo[i]=="raxml"){
+    newtrees <- list()
+    for(j in 1:length(trees)){
+      tr <- trees[[j]]
+      tl <- tr$tip.label
+      newtl <- vill.procnames(tl)
+      tr$tip.label <- newtl
+      newtrees[[j]] <- tr
+    }
+    trees <- newtrees
+  }
+  # Create tree strings
+  treestrings <- lapply(trees,write.tree) %>% unlist
+  treedict <- read.table(paste("../trees/",algo[i],"/key.txt",sep=""),header=F,row.names=NULL,sep="\t")
+  treedf <- rbind(treedf,data.frame(algo=rep(algo[i],length(treefiles)),treefilename=treefiles,tree=treestrings,truetree=treedict[match(treefiles,treedict[,1]),2]))
+}
+```
+
+```{r}
+treelm <- function(tr,truetr){
+  d <- cophenetic.phylo(tr)
+  dtrue <- cophenetic.phylo(truetr)
+  idx <- match(truetr$tip.label,tr$tip.label)
+  d <- d[idx,idx]
+  dlt <- d[lower.tri(d)]
+  dtruelt <- dtrue[lower.tri(dtrue)]
+  dlm <- summary(lm(dlt~dtruelt))
+  c(unname(coef(dlm)[,1]),dlm$r.squared)
+}
+```
+
+
+```{r}
+treedf$symmdist <- NA
+treedf$bsd <- NA
+treedf$pathdiff <- NA
+treedf$qpathdiff <- NA
+treedf$lmintercept <- NA
+treedf$lmslope <- NA
+treedf$lmrsq <- NA
+```
+
+
+```{r}
+numcomparisons <- dim(treedf)[1]
+for(i in 1:numcomparisons){
+  tr <- read.tree(text=as.character(treedf[i,]$tree))
+  trlen <- sum(tr$edge.length)
+  tr.norm <- tr
+  tr.norm$edge.length <- tr$edge.length/trlen
+  truetr <- truetrees[[as.character(treedf[i,]$truetree)]]
+  truetrlen <- sum(truetr$edge.length)
+  truetr.norm <- truetr
+  truetr.norm$edge.length <- truetr$edge.length/truetrlen
+  td <- treedist(tr.norm,truetr.norm)
+  treedf$symmdist[i] <- unname(td[1])
+  treedf$bsd[i] <- unname(td[2])
+  treedf$pathdiff[i] <- unname(td[3])
+  treedf$qpathdiff[i] <- unname(td[4])
+  tlm <- treelm(tr.norm,truetr.norm)
+  treedf$lmintercept[i] <- tlm[1]
+  treedf$lmslope[i] <- tlm[2]
+  treedf$lmrsq[i] <- tlm[3]
+}
+```
+
+```{r}
+write.table(treedf[,c(-3)],"results.txt",col.names=TRUE,row.names=FALSE,sep="\t",quote=F)
+```
+
