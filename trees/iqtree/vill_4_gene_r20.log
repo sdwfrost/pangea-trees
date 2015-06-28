@@ -1,0 +1,1429 @@
+IQ-TREE multicore version 1.3.2 for Mac OS X 64-bit built Jun 11 2015
+Copyright (c) 2011-2015 Nguyen Lam Tung, Olga Chernomor, Arndt von Haeseler and Bui Quang Minh.
+
+Host:    vetmac06.vet.cam.ac.uk (AVX, 64 GB RAM)
+Command: iqtree-omp -nt 1 -s ../../data/vill_4.phy -spp vill_partition_gene_r20.nex -pre vill_4_gene_r20
+Seed:    925488 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Wed Jun 24 10:44:56 2015
+Kernel:  AVX - 1 threads (16 CPU cores detected)
+
+Reading partition model file vill_partition_gene_r20.nex ...
+Reading alignment file ../../data/vill_4.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 1040 sequences with 6987 columns and 4784 patterns (4607 informative sites)
+                 Gap/Ambiguity  Composition  p-value
+   1  HOUSE4473_10321    0.00%    passed     99.43%
+   2  HOUSE1726_1723     0.00%    passed     98.33%
+   3  HOUSE4117_11242    0.00%    passed     84.89%
+   4  HOUSE6019_11687    0.00%    passed     97.03%
+   5  HOUSE1759_10170    0.00%    passed     72.68%
+   6  HOUSE4634_15013    0.00%    passed     65.53%
+   7  HOUSE5387_5366     0.00%    passed     68.78%
+   8  HOUSE5211_7353     0.00%    passed     55.40%
+   9  HOUSE912_10883     0.00%    passed     53.73%
+  10  HOUSE5019_12367    0.00%    passed     63.67%
+  11  HOUSE5911_5890     0.00%    passed     57.33%
+  12  HOUSE2732_2732     0.00%    passed     81.12%
+  13  HOUSE3871_11813    0.00%    passed     87.82%
+  14  HOUSE5066_14526    0.00%    passed     79.23%
+  15  HOUSE2831_11015    0.00%    passed     81.16%
+  16  HOUSE4805_4768     0.00%    passed     71.17%
+  17  HOUSE2050_11031    0.00%    passed     94.31%
+  18  HOUSE253_232       0.00%    passed     75.18%
+  19  HOUSE253_233       0.00%    passed     85.86%
+  20  HOUSE3647_3591     0.00%    passed     78.72%
+  21  HOUSE637_11577     0.00%    passed     81.93%
+  22  HOUSE3045_3028     0.00%    passed     82.50%
+  23  HOUSE3045_3029     0.00%    passed     86.83%
+  24  HOUSE1570_9233     0.00%    passed     83.61%
+  25  HOUSE1171_13412    0.00%    passed     65.90%
+  26  HOUSE4484_7206     0.00%    passed     87.27%
+  27  HOUSE3704_3647     0.00%    passed     79.83%
+  28  HOUSE2102_11886    0.00%    passed     88.62%
+  29  HOUSE2102_10053    0.00%    passed     73.11%
+  30  HOUSE1965_9289     0.00%    passed     92.39%
+  31  HOUSE1441_13503    0.00%    passed     95.36%
+  32  HOUSE714_12335     0.00%    passed     97.83%
+  33  HOUSE220_13727     0.00%    passed     99.56%
+  34  HOUSE1257_12224    0.00%    passed     86.60%
+  35  HOUSE1365_9016     0.00%    passed     95.32%
+  36  HOUSE1760_13552    0.00%    passed     78.74%
+  37  HOUSE5154_12138    0.00%    passed     95.07%
+  38  HOUSE5393_5373     0.00%    passed     30.53%
+  39  HOUSE4354_4317     0.00%    passed     63.21%
+  40  HOUSE5303_5286     0.00%    passed     86.27%
+  41  HOUSE1119_7620     0.00%    passed     85.26%
+  42  HOUSE798_11947     0.00%    passed     70.25%
+  43  HOUSE6019_6461     0.00%    passed     68.41%
+  44  HOUSE873_10396     0.00%    passed     90.43%
+  45  HOUSE1090_12876    0.00%    passed     97.11%
+  46  HOUSE605_10994     0.00%    passed     96.34%
+  47  HOUSE2668_14609    0.00%    passed     94.20%
+  48  HOUSE2668_15546    0.00%    passed     91.33%
+  49  HOUSE1803_10159    0.00%    passed     72.71%
+  50  HOUSE2712_11118    0.00%    passed     90.54%
+  51  HOUSE365_14004     0.00%    passed     79.82%
+  52  HOUSE6019_10942    0.00%    passed     83.06%
+  53  HOUSE1411_1394     0.00%    passed     92.69%
+  54  HOUSE2531_12536    0.00%    passed     88.75%
+  55  HOUSE5199_5170     0.00%    passed     78.84%
+  56  HOUSE3742_13606    0.00%    passed     97.92%
+  57  HOUSE5494_15983    0.00%    passed     90.77%
+  58  HOUSE2094_11998    0.00%    passed     77.40%
+  59  HOUSE3542_12257    0.00%    passed     91.55%
+  60  HOUSE2043_2044     0.00%    passed     74.11%
+  61  HOUSE3451_10588    0.00%    passed     84.05%
+  62  HOUSE2695_8673     0.00%    passed     96.36%
+  63  HOUSE5008_7810     0.00%    passed     87.74%
+  64  HOUSE2724_12897    0.00%    passed     72.06%
+  65  HOUSE2204_9244     0.00%    passed     69.78%
+  66  HOUSE6_14537       0.00%    passed     69.58%
+  67  HOUSE2027_2027     0.00%    passed     83.76%
+  68  HOUSE48_12034      0.00%    passed     67.68%
+  69  HOUSE2273_14610    0.00%    passed     69.69%
+  70  HOUSE2380_2395     0.00%    passed     85.01%
+  71  HOUSE2314_10163    0.00%    passed     97.35%
+  72  HOUSE1196_1168     0.00%    passed     94.91%
+  73  HOUSE2498_8931     0.00%    passed     96.12%
+  74  HOUSE3986_13870    0.00%    passed     89.80%
+  75  HOUSE358_12578     0.00%    passed     93.19%
+  76  HOUSE6019_13614    0.00%    passed     99.53%
+  77  HOUSE2049_13059    0.00%    passed     96.35%
+  78  HOUSE4165_4124     0.00%    passed     92.56%
+  79  HOUSE2331_15795    0.00%    passed     47.15%
+  80  HOUSE85_10287      0.00%    passed     38.79%
+  81  HOUSE3620_3566     0.00%    passed     86.94%
+  82  HOUSE775_12825     0.00%    passed     99.10%
+  83  HOUSE2268_2277     0.00%    passed     79.26%
+  84  HOUSE231_10915     0.00%    passed     99.72%
+  85  HOUSE2889_12992    0.00%    passed     88.92%
+  86  HOUSE4048_8681     0.00%    passed     94.35%
+  87  HOUSE2437_9891     0.00%    passed     86.82%
+  88  HOUSE946_15062     0.00%    passed     81.22%
+  89  HOUSE1995_14075    0.00%    passed     77.84%
+  90  HOUSE5107_6739     0.00%    passed     87.93%
+  91  HOUSE5107_8759     0.00%    passed     81.65%
+  92  HOUSE999_12158     0.00%    passed     95.13%
+  93  HOUSE251_6812      0.00%    passed     96.46%
+  94  HOUSE808_13695     0.00%    passed     95.77%
+  95  HOUSE808_14983     0.00%    passed     98.97%
+  96  HOUSE3288_3251     0.00%    passed     99.66%
+  97  HOUSE5695_7049     0.00%    passed     86.10%
+  98  HOUSE5756_5742     0.00%    passed     98.89%
+  99  HOUSE4373_4337     0.00%    passed     99.46%
+ 100  HOUSE4024_3986     0.00%    passed     96.54%
+ 101  HOUSE248_12953     0.00%    passed     88.09%
+ 102  HOUSE1031_11784    0.00%    passed     93.41%
+ 103  HOUSE1597_9657     0.00%    passed     79.66%
+ 104  HOUSE1180_11999    0.00%    passed     91.00%
+ 105  HOUSE1829_9883     0.00%    passed     83.45%
+ 106  HOUSE4473_15802    0.00%    passed     86.96%
+ 107  HOUSE6019_15099    0.00%    passed     79.41%
+ 108  HOUSE2687_11604    0.00%    passed     97.38%
+ 109  HOUSE2064_12831    0.00%    passed     83.12%
+ 110  HOUSE2768_11727    0.00%    passed     96.58%
+ 111  HOUSE2069_13681    0.00%    passed     98.72%
+ 112  HOUSE6019_13267    0.00%    passed     86.84%
+ 113  HOUSE746_13279     0.00%    passed     84.48%
+ 114  HOUSE2180_13328    0.00%    passed     95.08%
+ 115  HOUSE3527_7405     0.00%    passed     89.51%
+ 116  HOUSE935_15083     0.00%    passed     91.44%
+ 117  HOUSE2100_9979     0.00%    passed     92.31%
+ 118  HOUSE1225_10622    0.00%    passed     99.17%
+ 119  HOUSE3921_3881     0.00%    passed     97.73%
+ 120  HOUSE1573_12017    0.00%    passed     98.05%
+ 121  HOUSE2350_2363     0.00%    passed     97.48%
+ 122  HOUSE403_12850     0.00%    passed     91.61%
+ 123  HOUSE5054_11929    0.00%    passed     98.99%
+ 124  HOUSE385_371       0.00%    passed     97.56%
+ 125  HOUSE3549_8968     0.00%    passed     98.44%
+ 126  HOUSE2269_10670    0.00%    passed     91.32%
+ 127  HOUSE1272_12395    0.00%    passed     97.27%
+ 128  HOUSE1894_7685     0.00%    passed     97.90%
+ 129  HOUSE5340_9273     0.00%    passed     98.43%
+ 130  HOUSE1014_986      0.00%    passed     98.27%
+ 131  HOUSE4731_4703     0.00%    passed     79.78%
+ 132  HOUSE3243_14316    0.00%    passed     86.22%
+ 133  HOUSE396_7029      0.00%    passed     96.40%
+ 134  HOUSE2448_2464     0.00%    passed     96.43%
+ 135  HOUSE4740_11850    0.00%    passed     99.61%
+ 136  HOUSE4062_11930    0.00%    passed     75.56%
+ 137  HOUSE3901_14309    0.00%    passed     69.87%
+ 138  HOUSE2640_8643     0.00%    passed     88.40%
+ 139  HOUSE2837_12861    0.00%    passed     91.00%
+ 140  HOUSE2977_11917    0.00%    passed     89.97%
+ 141  HOUSE892_8622      0.00%    passed     88.66%
+ 142  HOUSE1569_14110    0.00%    passed     85.25%
+ 143  HOUSE740_13133     0.00%    passed     82.12%
+ 144  HOUSE2891_10501    0.00%    passed     67.46%
+ 145  HOUSE1486_11806    0.00%    passed     71.66%
+ 146  HOUSE1486_11949    0.00%    passed     89.92%
+ 147  HOUSE5456_11609    0.00%    passed     88.85%
+ 148  HOUSE1952_12469    0.00%    passed     94.99%
+ 149  HOUSE36_29         0.00%    passed     82.83%
+ 150  HOUSE1753_12790    0.00%    passed     71.96%
+ 151  HOUSE4628_15428    0.00%    passed     57.04%
+ 152  HOUSE6019_11828    0.00%    passed     93.50%
+ 153  HOUSE1439_11382    0.00%    passed     97.61%
+ 154  HOUSE1325_8749     0.00%    passed     96.47%
+ 155  HOUSE1395_13966    0.00%    passed     98.82%
+ 156  HOUSE512_11224     0.00%    passed     98.20%
+ 157  HOUSE5043_5019     0.00%    passed     99.92%
+ 158  HOUSE4058_8139     0.00%    passed     98.40%
+ 159  HOUSE2590_10723    0.00%    passed     94.54%
+ 160  HOUSE1592_9339     0.00%    passed     96.57%
+ 161  HOUSE209_7997      0.00%    passed     94.21%
+ 162  HOUSE312_8507      0.00%    passed     78.05%
+ 163  HOUSE1041_12782    0.00%    passed     84.05%
+ 164  HOUSE1041_13762    0.00%    passed     92.16%
+ 165  HOUSE1012_11303    0.00%    passed     89.29%
+ 166  HOUSE4015_3970     0.00%    passed     66.94%
+ 167  HOUSE1595_13161    0.00%    passed     62.79%
+ 168  HOUSE188_9686      0.00%    passed     93.71%
+ 169  HOUSE4827_4799     0.00%    passed     96.74%
+ 170  HOUSE6019_14330    0.00%    passed     99.98%
+ 171  HOUSE158_8980      0.00%    passed     98.52%
+ 172  HOUSE1146_8884     0.00%    passed     89.99%
+ 173  HOUSE5506_9887     0.00%    passed     99.19%
+ 174  HOUSE4265_10446    0.00%    passed     99.61%
+ 175  HOUSE2472_10882    0.00%    passed     97.87%
+ 176  HOUSE526_8436      0.00%    passed     87.28%
+ 177  HOUSE5873_7359     0.00%    passed     99.57%
+ 178  HOUSE5873_12799    0.00%    passed     96.37%
+ 179  HOUSE4314_9626     0.00%    passed     98.80%
+ 180  HOUSE5244_11077    0.00%    passed     94.18%
+ 181  HOUSE116_6270      0.00%    passed     99.52%
+ 182  HOUSE5401_12454    0.00%    passed     92.41%
+ 183  HOUSE1986_11679    0.00%    passed     94.16%
+ 184  HOUSE929_10249     0.00%    passed     95.17%
+ 185  HOUSE3500_3444     0.00%    passed     99.34%
+ 186  HOUSE573_9571      0.00%    passed     75.75%
+ 187  HOUSE3303_13409    0.00%    passed     93.61%
+ 188  HOUSE396_9078      0.00%    passed     96.75%
+ 189  HOUSE3874_10000    0.00%    passed     86.04%
+ 190  HOUSE2625_2633     0.00%    passed     97.33%
+ 191  HOUSE5464_13591    0.00%    passed     93.51%
+ 192  HOUSE5464_13549    0.00%    passed     91.81%
+ 193  HOUSE226_11372     0.00%    passed     96.84%
+ 194  HOUSE115_14770     0.00%    passed     86.95%
+ 195  HOUSE5304_5289     0.00%    passed     93.71%
+ 196  HOUSE5304_13112    0.00%    passed     98.75%
+ 197  HOUSE5285_14265    0.00%    passed     98.79%
+ 198  HOUSE5467_8801     0.00%    passed     99.27%
+ 199  HOUSE1343_1321     0.00%    passed     94.26%
+ 200  HOUSE1247_1235     0.00%    passed     99.15%
+ 201  HOUSE1159_10760    0.00%    passed     96.21%
+ 202  HOUSE6019_11770    0.00%    passed     73.29%
+ 203  HOUSE1970_9982     0.00%    passed     72.43%
+ 204  HOUSE1063_12922    0.00%    passed     82.16%
+ 205  HOUSE1063_13034    0.00%    passed     93.89%
+ 206  HOUSE5227_7642     0.00%    passed     78.67%
+ 207  HOUSE1362_1340     0.00%    passed     79.55%
+ 208  HOUSE2050_13413    0.00%    passed     86.74%
+ 209  HOUSE2298_14052    0.00%    passed     91.12%
+ 210  HOUSE2161_8611     0.00%    passed     89.74%
+ 211  HOUSE2025_2023     0.00%    passed     97.91%
+ 212  HOUSE5888_8578     0.00%    passed     98.13%
+ 213  HOUSE4958_15561    0.00%    passed     92.57%
+ 214  HOUSE4772_4735     0.00%    passed     90.93%
+ 215  HOUSE4396_15003    0.00%    passed     94.75%
+ 216  HOUSE874_861       0.00%    passed     87.72%
+ 217  HOUSE3231_13650    0.00%    passed     88.87%
+ 218  HOUSE4692_14904    0.00%    passed     69.05%
+ 219  HOUSE1461_9784     0.00%    passed     66.81%
+ 220  HOUSE2912_2910     0.00%    passed     81.94%
+ 221  HOUSE2912_14613    0.00%    passed     62.74%
+ 222  HOUSE2285_12596    0.00%    passed     74.12%
+ 223  HOUSE5611_5602     0.00%    passed     79.02%
+ 224  HOUSE276_15448     0.00%    passed     40.89%
+ 225  HOUSE421_402       0.00%    passed     76.46%
+ 226  HOUSE709_11121     0.00%    passed     86.76%
+ 227  HOUSE709_14674     0.00%    passed     89.05%
+ 228  HOUSE3666_3606     0.00%    passed     68.11%
+ 229  HOUSE3666_3607     0.00%    passed     78.39%
+ 230  HOUSE3731_3675     0.00%    passed     63.35%
+ 231  HOUSE6019_13667    0.00%    passed     78.50%
+ 232  HOUSE5309_8413     0.00%    passed     74.69%
+ 233  HOUSE1335_1310     0.00%    passed     90.33%
+ 234  HOUSE1911_9333     0.00%    passed     82.82%
+ 235  HOUSE378_11293     0.00%    passed     95.66%
+ 236  HOUSE3272_7192     0.00%    passed     98.65%
+ 237  HOUSE3272_3228     0.00%    passed     85.09%
+ 238  HOUSE4789_4755     0.00%    passed     99.99%
+ 239  HOUSE1631_1621     0.00%    passed     97.00%
+ 240  HOUSE1631_1620     0.00%    passed     90.46%
+ 241  HOUSE5738_5719     0.00%    passed     84.96%
+ 242  HOUSE4527_8284     0.00%    passed     86.47%
+ 243  HOUSE5998_9166     0.00%    passed     87.41%
+ 244  HOUSE5998_11485    0.00%    passed     82.05%
+ 245  HOUSE5419_6861     0.00%    passed     83.20%
+ 246  HOUSE1566_10859    0.00%    passed     87.35%
+ 247  HOUSE724_11148     0.00%    passed     98.88%
+ 248  HOUSE672_11778     0.00%    passed     99.11%
+ 249  HOUSE2988_7895     0.00%    passed     97.61%
+ 250  HOUSE5886_5862     0.00%    passed     97.88%
+ 251  HOUSE3715_3661     0.00%    passed     98.52%
+ 252  HOUSE2341_12160    0.00%    passed     97.70%
+ 253  HOUSE883_873       0.00%    passed     92.06%
+ 254  HOUSE1601_11881    0.00%    passed     83.22%
+ 255  HOUSE1025_11596    0.00%    passed     98.40%
+ 256  HOUSE607_7952      0.00%    passed     94.72%
+ 257  HOUSE1179_10986    0.00%    passed     79.29%
+ 258  HOUSE3533_13045    0.00%    passed     73.14%
+ 259  HOUSE4923_4897     0.00%    passed     72.18%
+ 260  HOUSE863_13406     0.00%    passed     59.01%
+ 261  HOUSE6019_12079    0.00%    passed     79.15%
+ 262  HOUSE1515_12250    0.00%    passed     86.88%
+ 263  HOUSE5055_5028     0.00%    passed     81.37%
+ 264  HOUSE4385_13778    0.00%    passed     84.94%
+ 265  HOUSE6019_14204    0.00%    passed     93.31%
+ 266  HOUSE2325_14124    0.00%    passed     96.24%
+ 267  HOUSE4654_11641    0.00%    passed     96.85%
+ 268  HOUSE693_9253      0.00%    passed     88.16%
+ 269  HOUSE35_9734       0.00%    passed     94.58%
+ 270  HOUSE2147_12132    0.00%    passed     98.19%
+ 271  HOUSE2147_11711    0.00%    passed     99.08%
+ 272  HOUSE1068_9762     0.00%    passed     92.55%
+ 273  HOUSE1068_1041     0.00%    passed     83.84%
+ 274  HOUSE6019_10008    0.00%    passed     84.94%
+ 275  HOUSE2021_15798    0.00%    passed     79.32%
+ 276  HOUSE4222_14818    0.00%    passed     74.54%
+ 277  HOUSE404_388       0.00%    passed     79.36%
+ 278  HOUSE5597_8730     0.00%    passed     91.93%
+ 279  HOUSE1961_1955     0.00%    passed     85.12%
+ 280  HOUSE366_11661     0.00%    passed     95.16%
+ 281  HOUSE3820_3772     0.00%    passed     99.21%
+ 282  HOUSE1232_1216     0.00%    passed     84.55%
+ 283  HOUSE6019_11111    0.00%    passed     73.81%
+ 284  HOUSE3767_9960     0.00%    passed     86.66%
+ 285  HOUSE3767_3723     0.00%    passed     60.69%
+ 286  HOUSE23_13628      0.00%    passed     92.79%
+ 287  HOUSE1968_12168    0.00%    passed     64.54%
+ 288  HOUSE1968_12932    0.00%    passed     87.28%
+ 289  HOUSE1156_13146    0.00%    passed     86.99%
+ 290  HOUSE6019_12195    0.00%    passed     91.73%
+ 291  HOUSE625_13978     0.00%    passed     86.45%
+ 292  HOUSE1993_11332    0.00%    passed     95.98%
+ 293  HOUSE1938_13690    0.00%    passed     79.42%
+ 294  HOUSE94_12859      0.00%    passed     95.11%
+ 295  HOUSE94_14114      0.00%    passed     77.38%
+ 296  HOUSE6010_5992     0.00%    passed     89.73%
+ 297  HOUSE6010_5993     0.00%    passed     96.47%
+ 298  HOUSE3814_3764     0.00%    passed     89.68%
+ 299  HOUSE178_9677      0.00%    passed     98.86%
+ 300  HOUSE4577_7615     0.00%    passed     91.21%
+ 301  HOUSE3473_3422     0.00%    passed     95.60%
+ 302  HOUSE395_12523     0.00%    passed     81.82%
+ 303  HOUSE665_9097      0.00%    passed     99.14%
+ 304  HOUSE618_8551      0.00%    passed     88.97%
+ 305  HOUSE4751_12971    0.00%    passed     90.43%
+ 306  HOUSE4751_11554    0.00%    passed     97.44%
+ 307  HOUSE654_10927     0.00%    passed     92.38%
+ 308  HOUSE2772_12126    0.00%    passed     95.24%
+ 309  HOUSE4572_9155     0.00%    passed     86.30%
+ 310  HOUSE4572_4518     0.00%    passed     81.95%
+ 311  HOUSE856_841       0.00%    passed     92.27%
+ 312  HOUSE672_14780     0.00%    passed     91.54%
+ 313  HOUSE1464_1445     0.00%    passed     95.64%
+ 314  HOUSE214_6247      0.00%    passed     96.47%
+ 315  HOUSE5454_5440     0.00%    passed     89.60%
+ 316  HOUSE3641_3587     0.00%    passed     98.28%
+ 317  HOUSE2726_13797    0.00%    passed     94.35%
+ 318  HOUSE4955_4931     0.00%    passed     89.56%
+ 319  HOUSE5918_5903     0.00%    passed     92.18%
+ 320  HOUSE2045_15409    0.00%    passed     80.58%
+ 321  HOUSE4887_14934    0.00%    passed     96.64%
+ 322  HOUSE1200_11741    0.00%    passed     82.16%
+ 323  HOUSE1035_13502    0.00%    passed     88.49%
+ 324  HOUSE1035_11789    0.00%    passed     94.01%
+ 325  HOUSE4901_4875     0.00%    passed     98.85%
+ 326  HOUSE407_10884     0.00%    passed     98.68%
+ 327  HOUSE4733_8817     0.00%    passed     97.72%
+ 328  HOUSE2395_13347    0.00%    passed     91.30%
+ 329  HOUSE302_12033     0.00%    passed     95.46%
+ 330  HOUSE238_9580      0.00%    passed     88.23%
+ 331  HOUSE1757_11792    0.00%    passed     86.15%
+ 332  HOUSE2338_9822     0.00%    passed     73.75%
+ 333  HOUSE1757_1753     0.00%    passed     83.43%
+ 334  HOUSE5481_10814    0.00%    passed     89.48%
+ 335  HOUSE3956_3915     0.00%    passed     94.94%
+ 336  HOUSE2395_12409    0.00%    passed     62.13%
+ 337  HOUSE3450_7522     0.00%    passed     88.96%
+ 338  HOUSE5893_9602     0.00%    passed     80.90%
+ 339  HOUSE4970_4949     0.00%    passed     97.06%
+ 340  HOUSE772_8035      0.00%    passed     96.11%
+ 341  HOUSE5815_15606    0.00%    passed     91.83%
+ 342  HOUSE2065_13862    0.00%    passed     90.48%
+ 343  HOUSE3224_8825     0.00%    passed     92.04%
+ 344  HOUSE3831_9845     0.00%    passed     92.02%
+ 345  HOUSE3831_12675    0.00%    passed     99.24%
+ 346  HOUSE1452_12259    0.00%    passed     89.25%
+ 347  HOUSE975_9663      0.00%    passed     95.91%
+ 348  HOUSE1380_11841    0.00%    passed     96.72%
+ 349  HOUSE2089_11585    0.00%    passed     90.10%
+ 350  HOUSE4674_12685    0.00%    passed     84.69%
+ 351  HOUSE5681_5671     0.00%    passed     98.93%
+ 352  HOUSE3368_10629    0.00%    passed     95.01%
+ 353  HOUSE3119_9563     0.00%    passed     72.65%
+ 354  HOUSE3805_7244     0.00%    passed     98.56%
+ 355  HOUSE5206_11350    0.00%    passed     98.93%
+ 356  HOUSE5700_10711    0.00%    passed     99.52%
+ 357  HOUSE3357_3307     0.00%    passed     93.65%
+ 358  HOUSE4797_9139     0.00%    passed     99.93%
+ 359  HOUSE6019_13537    0.00%    passed     98.61%
+ 360  HOUSE1914_9912     0.00%    passed     97.13%
+ 361  HOUSE2070_13510    0.00%    passed     99.55%
+ 362  HOUSE1633_11610    0.00%    passed     99.68%
+ 363  HOUSE4643_7780     0.00%    passed     96.14%
+ 364  HOUSE207_189       0.00%    passed     95.88%
+ 365  HOUSE5922_5906     0.00%    passed     99.23%
+ 366  HOUSE5922_5907     0.00%    passed     96.92%
+ 367  HOUSE4514_4472     0.00%    passed     99.80%
+ 368  HOUSE5413_15098    0.00%    passed     99.59%
+ 369  HOUSE2191_16580    0.00%    passed     96.88%
+ 370  HOUSE2192_12727    0.00%    passed     99.58%
+ 371  HOUSE3002_12407    0.00%    passed    100.00%
+ 372  HOUSE5732_9879     0.00%    passed     98.39%
+ 373  HOUSE5732_9999     0.00%    passed     99.84%
+ 374  HOUSE6019_11653    0.00%    passed     94.34%
+ 375  HOUSE3306_10620    0.00%    passed     92.59%
+ 376  HOUSE4411_4373     0.00%    passed     97.39%
+ 377  HOUSE2984_2972     0.00%    passed     66.85%
+ 378  HOUSE2856_15979    0.00%    passed     46.89%
+ 379  HOUSE4951_13720    0.00%    passed     94.93%
+ 380  HOUSE4951_13394    0.00%    passed     96.97%
+ 381  HOUSE4748_9468     0.00%    passed     94.15%
+ 382  HOUSE641_10179     0.00%    passed     94.31%
+ 383  HOUSE1024_11561    0.00%    passed     81.58%
+ 384  HOUSE4239_4190     0.00%    passed     93.68%
+ 385  HOUSE2718_12722    0.00%    passed     99.38%
+ 386  HOUSE602_13388     0.00%    passed     94.60%
+ 387  HOUSE2647_9902     0.00%    passed     76.60%
+ 388  HOUSE2647_13115    0.00%    passed     98.74%
+ 389  HOUSE2199_6278     0.00%    passed     99.47%
+ 390  HOUSE5495_14153    0.00%    passed     98.74%
+ 391  HOUSE1815_14638    0.00%    passed     99.08%
+ 392  HOUSE2456_10818    0.00%    passed     99.98%
+ 393  HOUSE497_13367     0.00%    passed     99.76%
+ 394  HOUSE3932_3891     0.00%    passed     90.70%
+ 395  HOUSE1456_15483    0.00%    passed     73.46%
+ 396  HOUSE2722_9153     0.00%    passed     86.08%
+ 397  HOUSE1114_12280    0.00%    passed     96.23%
+ 398  HOUSE3903_11860    0.00%    passed     97.53%
+ 399  HOUSE1442_14112    0.00%    passed     91.48%
+ 400  HOUSE1882_14729    0.00%    passed     86.39%
+ 401  HOUSE1145_1109     0.00%    passed     93.20%
+ 402  HOUSE3448_3396     0.00%    passed     94.92%
+ 403  HOUSE1848_15551    0.00%    passed     89.86%
+ 404  HOUSE1160_7840     0.00%    passed     84.21%
+ 405  HOUSE1992_1979     0.00%    passed     92.51%
+ 406  HOUSE4537_4486     0.00%    passed     81.92%
+ 407  HOUSE4537_4487     0.00%    passed     89.01%
+ 408  HOUSE2393_13880    0.00%    passed     98.43%
+ 409  HOUSE1985_16200    0.00%    passed     95.60%
+ 410  HOUSE2068_2068     0.00%    passed     93.26%
+ 411  HOUSE841_827       0.00%    passed     97.22%
+ 412  HOUSE5706_5697     0.00%    passed     94.39%
+ 413  HOUSE534_8707      0.00%    passed     88.40%
+ 414  HOUSE2127_11387    0.00%    passed     98.18%
+ 415  HOUSE5868_8314     0.00%    passed     95.54%
+ 416  HOUSE1070_16711    0.00%    passed     93.44%
+ 417  HOUSE5726_6928     0.00%    passed     97.77%
+ 418  HOUSE156_9522      0.00%    passed     99.87%
+ 419  HOUSE1614_14099    0.00%    passed     99.97%
+ 420  HOUSE380_12899     0.00%    passed     99.33%
+ 421  HOUSE5242_5215     0.00%    passed     89.82%
+ 422  HOUSE2111_10369    0.00%    passed     96.21%
+ 423  HOUSE5121_11783    0.00%    passed     99.70%
+ 424  HOUSE2614_9937     0.00%    passed     99.56%
+ 425  HOUSE4252_8201     0.00%    passed     88.12%
+ 426  HOUSE5083_5052     0.00%    passed     99.90%
+ 427  HOUSE370_8361      0.00%    passed     99.55%
+ 428  HOUSE565_10407     0.00%    passed     97.13%
+ 429  HOUSE2862_15454    0.00%    passed     91.40%
+ 430  HOUSE784_7905      0.00%    passed     99.05%
+ 431  HOUSE4525_11409    0.00%    passed     86.09%
+ 432  HOUSE4525_13436    0.00%    passed     99.29%
+ 433  HOUSE3597_6773     0.00%    passed     97.85%
+ 434  HOUSE2653_13907    0.00%    passed     85.77%
+ 435  HOUSE282_7709      0.00%    passed     99.72%
+ 436  HOUSE5758_5746     0.00%    passed     92.36%
+ 437  HOUSE512_489       0.00%    passed     87.34%
+ 438  HOUSE1632_7262     0.00%    passed     95.07%
+ 439  HOUSE3582_3529     0.00%    passed     94.09%
+ 440  HOUSE3582_12193    0.00%    passed     98.66%
+ 441  HOUSE1329_8632     0.00%    passed     90.07%
+ 442  HOUSE3091_12957    0.00%    passed     78.90%
+ 443  HOUSE2907_11852    0.00%    passed     93.66%
+ 444  HOUSE5946_15000    0.00%    passed     99.01%
+ 445  HOUSE2952_2943     0.00%    passed     98.74%
+ 446  HOUSE1168_15407    0.00%    passed     99.60%
+ 447  HOUSE686_9240      0.00%    passed     97.70%
+ 448  HOUSE5532_11529    0.00%    passed     79.00%
+ 449  HOUSE2099_2109     0.00%    passed     98.11%
+ 450  HOUSE6019_6186     0.00%    passed     71.55%
+ 451  HOUSE3949_6952     0.00%    passed     80.02%
+ 452  HOUSE3949_11592    0.00%    passed     97.98%
+ 453  HOUSE1369_13931    0.00%    passed     61.13%
+ 454  HOUSE352_340       0.00%    passed     87.24%
+ 455  HOUSE2013_7718     0.00%    passed     81.83%
+ 456  HOUSE3383_7898     0.00%    passed     75.33%
+ 457  HOUSE4020_3979     0.00%    passed     74.88%
+ 458  HOUSE981_10752     0.00%    passed     83.42%
+ 459  HOUSE2887_12243    0.00%    passed     65.35%
+ 460  HOUSE3241_8073     0.00%    passed     98.39%
+ 461  HOUSE155_7749      0.00%    passed     99.50%
+ 462  HOUSE5117_14134    0.00%    passed     96.65%
+ 463  HOUSE1048_10471    0.00%    passed     88.69%
+ 464  HOUSE1211_8070     0.00%    passed     64.05%
+ 465  HOUSE2735_10952    0.00%    passed     83.87%
+ 466  HOUSE1567_16847    0.00%    passed     77.93%
+ 467  HOUSE1443_16404    0.00%    passed     79.54%
+ 468  HOUSE213_15269     0.00%    passed     86.81%
+ 469  HOUSE1151_12426    0.00%    passed     83.70%
+ 470  HOUSE6019_14664    0.00%    passed     83.66%
+ 471  HOUSE2215_11101    0.00%    passed     89.91%
+ 472  HOUSE4729_12504    0.00%    passed     99.88%
+ 473  HOUSE4629_15490    0.00%    passed     97.90%
+ 474  HOUSE338_6918      0.00%    passed     97.21%
+ 475  HOUSE3295_7569     0.00%    passed     98.73%
+ 476  HOUSE2268_8685     0.00%    passed     99.47%
+ 477  HOUSE2052_2055     0.00%    passed     97.76%
+ 478  HOUSE2911_10143    0.00%    passed     99.39%
+ 479  HOUSE2156_8836     0.00%    passed     90.49%
+ 480  HOUSE1255_1240     0.00%    passed     98.55%
+ 481  HOUSE5502_11278    0.00%    passed     98.14%
+ 482  HOUSE150_14942     0.00%    passed     97.95%
+ 483  HOUSE5256_10852    0.00%    passed     97.84%
+ 484  HOUSE706_679       0.00%    passed     91.59%
+ 485  HOUSE4936_8698     0.00%    passed     81.68%
+ 486  HOUSE3980_9116     0.00%    passed     78.02%
+ 487  HOUSE1596_1586     0.00%    passed     77.56%
+ 488  HOUSE849_13711     0.00%    passed     84.89%
+ 489  HOUSE5754_8407     0.00%    passed     68.56%
+ 490  HOUSE1637_9761     0.00%    passed     94.22%
+ 491  HOUSE2499_8417     0.00%    passed     81.22%
+ 492  HOUSE6019_10910    0.00%    passed     99.58%
+ 493  HOUSE4380_10841    0.00%    passed     99.95%
+ 494  HOUSE1319_9526     0.00%    passed     99.90%
+ 495  HOUSE1146_1110     0.00%    passed     98.06%
+ 496  HOUSE5679_7638     0.00%    passed     94.05%
+ 497  HOUSE1790_1795     0.00%    passed     92.41%
+ 498  HOUSE1825_15106    0.00%    passed     83.73%
+ 499  HOUSE6019_13090    0.00%    passed     71.11%
+ 500  HOUSE1832_15085    0.00%    passed     70.42%
+ 501  HOUSE5371_11464    0.00%    passed     49.54%
+ 502  HOUSE941_924       0.00%    passed     88.30%
+ 503  HOUSE5876_9306     0.00%    passed     99.23%
+ 504  HOUSE5624_13926    0.00%    passed     99.34%
+ 505  HOUSE5451_10218    0.00%    passed     98.71%
+ 506  HOUSE973_957       0.00%    passed     99.77%
+ 507  HOUSE5637_14756    0.00%    passed     84.60%
+ 508  HOUSE4085_4041     0.00%    passed     91.04%
+ 509  HOUSE768_751       0.00%    passed     88.42%
+ 510  HOUSE5353_9469     0.00%    passed     97.61%
+ 511  HOUSE3218_3170     0.00%    passed     98.35%
+ 512  HOUSE2063_8200     0.00%    passed     77.82%
+ 513  HOUSE836_821       0.00%    passed     90.48%
+ 514  HOUSE4812_6828     0.00%    passed     99.91%
+ 515  HOUSE4844_4809     0.00%    passed     95.70%
+ 516  HOUSE1567_12772    0.00%    passed     85.98%
+ 517  HOUSE4844_6297     0.00%    passed     96.35%
+ 518  HOUSE1282_10317    0.00%    passed     99.91%
+ 519  HOUSE3664_15745    0.00%    passed     96.20%
+ 520  HOUSE5603_12991    0.00%    passed     97.78%
+ 521  HOUSE4703_4670     0.00%    passed     94.00%
+ 522  HOUSE2863_15421    0.00%    passed     82.03%
+ 523  HOUSE5266_12264    0.00%    passed     99.01%
+ 524  HOUSE2227_15994    0.00%    passed     93.06%
+ 525  HOUSE509_11169     0.00%    passed     89.10%
+ 526  HOUSE1923_16423    0.00%    passed     89.60%
+ 527  HOUSE5958_7809     0.00%    passed     99.10%
+ 528  HOUSE972_955       0.00%    passed     79.51%
+ 529  HOUSE5123_5087     0.00%    passed     92.88%
+ 530  HOUSE278_12502     0.00%    passed     73.42%
+ 531  HOUSE3169_15202    0.00%    passed     95.60%
+ 532  HOUSE1621_9562     0.00%    passed     97.91%
+ 533  HOUSE2691_12309    0.00%    passed     96.77%
+ 534  HOUSE3123_7194     0.00%    passed     96.35%
+ 535  HOUSE2691_15595    0.00%    passed     91.07%
+ 536  HOUSE2541_11141    0.00%    passed     82.93%
+ 537  HOUSE84_10849      0.00%    passed     83.96%
+ 538  HOUSE2455_2474     0.00%    passed     99.64%
+ 539  HOUSE123_10589     0.00%    passed     99.98%
+ 540  HOUSE2303_14359    0.00%    passed     95.45%
+ 541  HOUSE6019_9690     0.00%    passed     96.63%
+ 542  HOUSE1217_13373    0.00%    passed     95.88%
+ 543  HOUSE102_16396     0.00%    passed     95.10%
+ 544  HOUSE25_13945      0.00%    passed     98.36%
+ 545  HOUSE364_12453     0.00%    passed     98.68%
+ 546  HOUSE5529_15629    0.00%    passed     98.22%
+ 547  HOUSE243_224       0.00%    passed     79.26%
+ 548  HOUSE1192_11571    0.00%    passed     95.99%
+ 549  HOUSE2382_13669    0.00%    passed     95.17%
+ 550  HOUSE2382_7742     0.00%    passed     97.20%
+ 551  HOUSE366_12486     0.00%    passed     98.91%
+ 552  HOUSE5201_5175     0.00%    passed     96.85%
+ 553  HOUSE1929_1927     0.00%    passed     94.79%
+ 554  HOUSE4037_3997     0.00%    passed     85.04%
+ 555  HOUSE5339_8668     0.00%    passed     96.89%
+ 556  HOUSE1324_10488    0.00%    passed     80.47%
+ 557  HOUSE4203_6332     0.00%    passed     93.77%
+ 558  HOUSE2494_6349     0.00%    passed     95.92%
+ 559  HOUSE1069_8742     0.00%    passed     89.97%
+ 560  HOUSE2963_11709    0.00%    passed     97.31%
+ 561  HOUSE5461_5445     0.00%    passed     95.85%
+ 562  HOUSE3856_12853    0.00%    passed     87.18%
+ 563  HOUSE3506_3450     0.00%    passed     77.43%
+ 564  HOUSE4371_11636    0.00%    passed     87.76%
+ 565  HOUSE6019_13952    0.00%    passed     90.94%
+ 566  HOUSE669_13571     0.00%    passed     91.96%
+ 567  HOUSE6019_14628    0.00%    passed     94.83%
+ 568  HOUSE4883_9685     0.00%    passed     93.92%
+ 569  HOUSE1708_14148    0.00%    passed     93.95%
+ 570  HOUSE5538_5532     0.00%    passed     87.85%
+ 571  HOUSE1284_9492     0.00%    passed     96.69%
+ 572  HOUSE3770_6545     0.00%    passed     96.85%
+ 573  HOUSE1125_6934     0.00%    passed     93.60%
+ 574  HOUSE948_7187      0.00%    passed     89.44%
+ 575  HOUSE3770_3726     0.00%    passed     94.26%
+ 576  HOUSE4376_10649    0.00%    passed     99.71%
+ 577  HOUSE6019_9788     0.00%    passed     96.85%
+ 578  HOUSE4309_4262     0.00%    passed     95.57%
+ 579  HOUSE1717_9760     0.00%    passed     99.64%
+ 580  HOUSE2579_12646    0.00%    passed     99.06%
+ 581  HOUSE6019_13429    0.00%    passed     83.40%
+ 582  HOUSE1205_1182     0.00%    passed     75.97%
+ 583  HOUSE1480_1458     0.00%    passed     80.25%
+ 584  HOUSE5923_5908     0.00%    passed     68.93%
+ 585  HOUSE1191_12823    0.00%    passed     98.31%
+ 586  HOUSE2517_2534     0.00%    passed     82.88%
+ 587  HOUSE4967_4947     0.00%    passed     99.86%
+ 588  HOUSE673_12497     0.00%    passed     99.48%
+ 589  HOUSE12_10195      0.00%    passed     99.02%
+ 590  HOUSE6019_11764    0.00%    passed     95.80%
+ 591  HOUSE1260_14775    0.00%    passed     94.08%
+ 592  HOUSE5028_9721     0.00%    passed     94.74%
+ 593  HOUSE5720_11473    0.00%    passed     98.57%
+ 594  HOUSE2281_9332     0.00%    passed     98.75%
+ 595  HOUSE2597_8556     0.00%    passed     98.89%
+ 596  HOUSE2597_13098    0.00%    passed     98.69%
+ 597  HOUSE2281_2295     0.00%    passed     98.46%
+ 598  HOUSE1149_13895    0.00%    passed     93.57%
+ 599  HOUSE1657_1648     0.00%    passed     97.05%
+ 600  HOUSE3555_11342    0.00%    passed     92.06%
+ 601  HOUSE2537_2555     0.00%    passed     87.24%
+ 602  HOUSE2894_9691     0.00%    passed     84.98%
+ 603  HOUSE555_7717      0.00%    passed     94.92%
+ 604  HOUSE1758_1754     0.00%    passed     97.89%
+ 605  HOUSE1792_11443    0.00%    passed     94.85%
+ 606  HOUSE6019_6123     0.00%    passed     73.37%
+ 607  HOUSE4466_4434     0.00%    passed     88.00%
+ 608  HOUSE3432_12324    0.00%    passed     86.26%
+ 609  HOUSE6001_5978     0.00%    passed     99.23%
+ 610  HOUSE3594_3544     0.00%    passed     99.27%
+ 611  HOUSE5995_5972     0.00%    passed     99.61%
+ 612  HOUSE5668_5655     0.00%    passed     97.37%
+ 613  HOUSE706_13655     0.00%    passed     77.70%
+ 614  HOUSE5473_13399    0.00%    passed     96.48%
+ 615  HOUSE5473_9844     0.00%    passed     90.71%
+ 616  HOUSE6019_10821    0.00%    passed     94.56%
+ 617  HOUSE168_6671      0.00%    passed     91.82%
+ 618  HOUSE4965_4944     0.00%    passed     98.93%
+ 619  HOUSE4965_4945     0.00%    passed     95.12%
+ 620  HOUSE5988_5963     0.00%    passed     98.88%
+ 621  HOUSE5988_5962     0.00%    passed     99.76%
+ 622  HOUSE5025_4999     0.00%    passed     97.95%
+ 623  HOUSE1635_13070    0.00%    passed     92.28%
+ 624  HOUSE2662_12889    0.00%    passed     87.02%
+ 625  HOUSE4478_9351     0.00%    passed     92.75%
+ 626  HOUSE1370_1348     0.00%    passed     90.55%
+ 627  HOUSE2276_11247    0.00%    passed     95.91%
+ 628  HOUSE1602_14318    0.00%    passed     73.56%
+ 629  HOUSE2371_10076    0.00%    passed     86.48%
+ 630  HOUSE2084_8520     0.00%    passed     88.73%
+ 631  HOUSE6019_13621    0.00%    passed     88.73%
+ 632  HOUSE2066_14006    0.00%    passed     73.84%
+ 633  HOUSE4627_9230     0.00%    passed     94.21%
+ 634  HOUSE2144_8419     0.00%    passed     56.95%
+ 635  HOUSE2694_10258    0.00%    passed     99.71%
+ 636  HOUSE3842_12829    0.00%    passed     97.43%
+ 637  HOUSE5701_8534     0.00%    passed     96.59%
+ 638  HOUSE2594_8338     0.00%    passed     95.60%
+ 639  HOUSE5695_16696    0.00%    passed     96.93%
+ 640  HOUSE2020_10465    0.00%    passed     96.74%
+ 641  HOUSE5485_5473     0.00%    passed     93.65%
+ 642  HOUSE2664_2675     0.00%    passed     96.48%
+ 643  HOUSE3230_11940    0.00%    passed     88.54%
+ 644  HOUSE915_898       0.00%    passed     85.55%
+ 645  HOUSE4068_11861    0.00%    passed     88.68%
+ 646  HOUSE4006_7591     0.00%    passed     97.31%
+ 647  HOUSE4716_4689     0.00%    passed     96.64%
+ 648  HOUSE1910_6435     0.00%    passed     87.50%
+ 649  HOUSE3390_3339     0.00%    passed     88.09%
+ 650  HOUSE5187_5159     0.00%    passed     99.57%
+ 651  HOUSE1688_6498     0.00%    passed     97.31%
+ 652  HOUSE1065_13248    0.00%    passed     96.29%
+ 653  HOUSE980_8454      0.00%    passed     99.60%
+ 654  HOUSE244_10301     0.00%    passed     97.93%
+ 655  HOUSE5027_5002     0.00%    passed     92.46%
+ 656  HOUSE3075_3052     0.00%    passed     99.21%
+ 657  HOUSE1235_8135     0.00%    passed     94.46%
+ 658  HOUSE5318_10056    0.00%    passed     96.74%
+ 659  HOUSE518_13560     0.00%    passed     81.04%
+ 660  HOUSE2976_2965     0.00%    passed     86.09%
+ 661  HOUSE2905_11959    0.00%    passed     92.47%
+ 662  HOUSE5462_15146    0.00%    passed     95.17%
+ 663  HOUSE2325_10009    0.00%    passed     90.83%
+ 664  HOUSE4492_9598     0.00%    passed     99.82%
+ 665  HOUSE135_13391     0.00%    passed     99.23%
+ 666  HOUSE135_12770     0.00%    passed     98.44%
+ 667  HOUSE4027_8944     0.00%    passed     93.05%
+ 668  HOUSE2193_2217     0.00%    passed     76.59%
+ 669  HOUSE1708_8735     0.00%    passed     77.12%
+ 670  HOUSE1407_9797     0.00%    passed     72.86%
+ 671  HOUSE1240_1227     0.00%    passed     99.60%
+ 672  HOUSE1240_10633    0.00%    passed     88.05%
+ 673  HOUSE1639_1634     0.00%    passed     86.97%
+ 674  HOUSE3005_12284    0.00%    passed     92.28%
+ 675  HOUSE2441_10851    0.00%    passed     93.06%
+ 676  HOUSE4578_7156     0.00%    passed     92.67%
+ 677  HOUSE2279_9935     0.00%    passed     94.59%
+ 678  HOUSE5347_5322     0.00%    passed     98.11%
+ 679  HOUSE1850_10542    0.00%    passed     98.47%
+ 680  HOUSE1850_10105    0.00%    passed     99.37%
+ 681  HOUSE1350_1328     0.00%    passed     99.56%
+ 682  HOUSE4977_11282    0.00%    passed     96.04%
+ 683  HOUSE1330_10653    0.00%    passed     92.34%
+ 684  HOUSE2206_12566    0.00%    passed     92.27%
+ 685  HOUSE1998_14495    0.00%    passed     82.68%
+ 686  HOUSE1844_1841     0.00%    passed     95.96%
+ 687  HOUSE1560_14168    0.00%    passed     99.67%
+ 688  HOUSE1390_10451    0.00%    passed     81.60%
+ 689  HOUSE119_12935     0.00%    passed     98.65%
+ 690  HOUSE660_11939     0.00%    passed     94.31%
+ 691  HOUSE1081_10866    0.00%    passed     94.76%
+ 692  HOUSE2431_2446     0.00%    passed     62.96%
+ 693  HOUSE2182_11961    0.00%    passed     71.86%
+ 694  HOUSE2202_12333    0.00%    passed     83.20%
+ 695  HOUSE3827_3782     0.00%    passed     98.99%
+ 696  HOUSE5472_5462     0.00%    passed     82.84%
+ 697  HOUSE891_12819     0.00%    passed     99.38%
+ 698  HOUSE1055_7886     0.00%    passed     98.76%
+ 699  HOUSE1250_13260    0.00%    passed     95.15%
+ 700  HOUSE5696_6869     0.00%    passed     98.96%
+ 701  HOUSE1250_13699    0.00%    passed     87.14%
+ 702  HOUSE454_10794     0.00%    passed     98.91%
+ 703  HOUSE91_11900      0.00%    passed     89.31%
+ 704  HOUSE91_12248      0.00%    passed     90.26%
+ 705  HOUSE1801_12968    0.00%    passed     83.05%
+ 706  HOUSE1801_1807     0.00%    passed     86.10%
+ 707  HOUSE3545_3494     0.00%    passed     96.98%
+ 708  HOUSE1636_7746     0.00%    passed     92.51%
+ 709  HOUSE1218_1201     0.00%    passed     94.22%
+ 710  HOUSE1114_1086     0.00%    passed     80.70%
+ 711  HOUSE4444_4411     0.00%    passed     43.70%
+ 712  HOUSE4158_4120     0.00%    passed     98.02%
+ 713  HOUSE1334_10717    0.00%    passed     91.13%
+ 714  HOUSE3421_8874     0.00%    passed     94.61%
+ 715  HOUSE3973_3933     0.00%    passed     99.94%
+ 716  HOUSE4356_11296    0.00%    passed     99.64%
+ 717  HOUSE5014_9194     0.00%    passed     97.24%
+ 718  HOUSE5014_4987     0.00%    passed     94.66%
+ 719  HOUSE1015_10744    0.00%    passed     98.35%
+ 720  HOUSE720_10093     0.00%    passed     98.28%
+ 721  HOUSE3008_11470    0.00%    passed     93.11%
+ 722  HOUSE106_9992      0.00%    passed     99.90%
+ 723  HOUSE5392_9978     0.00%    passed     99.61%
+ 724  HOUSE1360_12198    0.00%    passed     95.65%
+ 725  HOUSE3599_3547     0.00%    passed     99.64%
+ 726  HOUSE947_13994     0.00%    passed     98.01%
+ 727  HOUSE1497_6885     0.00%    passed     99.46%
+ 728  HOUSE1405_13961    0.00%    passed     79.52%
+ 729  HOUSE1207_10905    0.00%    passed     90.94%
+ 730  HOUSE1475_9633     0.00%    passed     80.27%
+ 731  HOUSE6019_12065    0.00%    passed     95.60%
+ 732  HOUSE686_8964      0.00%    passed     99.86%
+ 733  HOUSE2569_13890    0.00%    passed     99.05%
+ 734  HOUSE4683_4652     0.00%    passed     99.53%
+ 735  HOUSE4419_8782     0.00%    passed     94.58%
+ 736  HOUSE2328_14340    0.00%    passed     98.65%
+ 737  HOUSE4746_13751    0.00%    passed     94.20%
+ 738  HOUSE940_14344     0.00%    passed     93.97%
+ 739  HOUSE347_15352     0.00%    passed     88.73%
+ 740  HOUSE4814_14197    0.00%    passed     92.83%
+ 741  HOUSE1160_6462     0.00%    passed     93.70%
+ 742  HOUSE2524_2540     0.00%    passed     91.08%
+ 743  HOUSE6019_11322    0.00%    passed     97.35%
+ 744  HOUSE390_12274     0.00%    passed     95.36%
+ 745  HOUSE2754_10848    0.00%    passed     95.88%
+ 746  HOUSE562_532       0.00%    passed     94.78%
+ 747  HOUSE1467_1451     0.00%    passed     97.56%
+ 748  HOUSE545_13671     0.00%    passed     97.90%
+ 749  HOUSE431_15872     0.00%    passed     95.69%
+ 750  HOUSE3746_3698     0.00%    passed     93.17%
+ 751  HOUSE3746_12153    0.00%    passed     91.70%
+ 752  HOUSE1610_9659     0.00%    passed     99.68%
+ 753  HOUSE6019_15376    0.00%    passed     96.83%
+ 754  HOUSE3877_3833     0.00%    passed     96.49%
+ 755  HOUSE3877_6516     0.00%    passed     97.71%
+ 756  HOUSE1046_14808    0.00%    passed     99.10%
+ 757  HOUSE2798_12240    0.00%    passed     96.95%
+ 758  HOUSE1451_11116    0.00%    passed     99.06%
+ 759  HOUSE3385_3333     0.00%    passed     99.24%
+ 760  HOUSE150_132       0.00%    passed     95.85%
+ 761  HOUSE5253_15497    0.00%    passed     94.22%
+ 762  HOUSE4968_12560    0.00%    passed     78.48%
+ 763  HOUSE6019_9471     0.00%    passed     87.75%
+ 764  HOUSE2901_10334    0.00%    passed     80.98%
+ 765  HOUSE2538_13101    0.00%    passed     83.87%
+ 766  HOUSE483_13746     0.00%    passed     82.52%
+ 767  HOUSE6019_13851    0.00%    passed     80.11%
+ 768  HOUSE2173_15476    0.00%    passed     83.83%
+ 769  HOUSE5853_12735    0.00%    passed     87.14%
+ 770  HOUSE3694_9599     0.00%    passed     95.24%
+ 771  HOUSE1290_9156     0.00%    passed     98.46%
+ 772  HOUSE5179_13883    0.00%    passed     94.18%
+ 773  HOUSE2740_2743     0.00%    passed     98.46%
+ 774  HOUSE990_11231     0.00%    passed     79.73%
+ 775  HOUSE3134_3102     0.00%    passed     94.06%
+ 776  HOUSE5116_11288    0.00%    passed     97.90%
+ 777  HOUSE1217_13332    0.00%    passed     97.58%
+ 778  HOUSE1623_10351    0.00%    passed     96.40%
+ 779  HOUSE4315_4268     0.00%    passed     93.02%
+ 780  HOUSE6019_12915    0.00%    passed     98.15%
+ 781  HOUSE1147_13460    0.00%    passed     97.95%
+ 782  HOUSE3370_13624    0.00%    passed     96.91%
+ 783  HOUSE1007_13421    0.00%    passed     98.35%
+ 784  HOUSE6019_13729    0.00%    passed     96.77%
+ 785  HOUSE1185_1158     0.00%    passed     96.48%
+ 786  HOUSE3615_3561     0.00%    passed     95.62%
+ 787  HOUSE1242_11638    0.00%    passed     83.08%
+ 788  HOUSE2244_10522    0.00%    passed     97.64%
+ 789  HOUSE5802_11737    0.00%    passed     96.18%
+ 790  HOUSE2895_2893     0.00%    passed     98.50%
+ 791  HOUSE924_7540      0.00%    passed     93.99%
+ 792  HOUSE6019_9464     0.00%    passed     88.49%
+ 793  HOUSE4202_13368    0.00%    passed     91.98%
+ 794  HOUSE5111_5071     0.00%    passed     97.95%
+ 795  HOUSE3071_11694    0.00%    passed     88.15%
+ 796  HOUSE2526_10428    0.00%    passed     98.37%
+ 797  HOUSE4422_8020     0.00%    passed     99.97%
+ 798  HOUSE711_10546     0.00%    passed     98.80%
+ 799  HOUSE3629_3571     0.00%    passed     99.55%
+ 800  HOUSE4316_7170     0.00%    passed     78.52%
+ 801  HOUSE5507_10874    0.00%    passed     96.58%
+ 802  HOUSE848_8935      0.00%    passed     95.74%
+ 803  HOUSE848_15302     0.00%    passed     93.78%
+ 804  HOUSE2000_11731    0.00%    passed     99.05%
+ 805  HOUSE1697_1699     0.00%    passed     99.55%
+ 806  HOUSE580_13792     0.00%    passed     80.35%
+ 807  HOUSE2616_13940    0.00%    passed     96.62%
+ 808  HOUSE1807_10271    0.00%    passed     95.22%
+ 809  HOUSE726_7172      0.00%    passed     95.69%
+ 810  HOUSE4608_12990    0.00%    passed     95.90%
+ 811  HOUSE4608_12400    0.00%    passed     95.00%
+ 812  HOUSE4128_7385     0.00%    passed     98.21%
+ 813  HOUSE6019_15250    0.00%    passed     79.52%
+ 814  HOUSE5224_13830    0.00%    passed     91.71%
+ 815  HOUSE5539_12681    0.00%    passed     93.73%
+ 816  HOUSE2860_13124    0.00%    passed     95.25%
+ 817  HOUSE1037_15687    0.00%    passed     92.78%
+ 818  HOUSE5051_10902    0.00%    passed     94.67%
+ 819  HOUSE5131_9101     0.00%    passed     97.34%
+ 820  HOUSE4888_14351    0.00%    passed     96.74%
+ 821  HOUSE855_16063     0.00%    passed     99.93%
+ 822  HOUSE1043_14746    0.00%    passed     89.33%
+ 823  HOUSE1735_6811     0.00%    passed     89.11%
+ 824  HOUSE2835_15602    0.00%    passed     97.70%
+ 825  HOUSE1303_9628     0.00%    passed     93.49%
+ 826  HOUSE1946_12779    0.00%    passed     90.75%
+ 827  HOUSE4196_6830     0.00%    passed     98.12%
+ 828  HOUSE2431_9835     0.00%    passed     86.60%
+ 829  HOUSE1497_8576     0.00%    passed     81.01%
+ 830  HOUSE5432_5415     0.00%    passed     91.20%
+ 831  HOUSE3376_8469     0.00%    passed     96.62%
+ 832  HOUSE3297_14339    0.00%    passed     91.65%
+ 833  HOUSE5686_5674     0.00%    passed     63.77%
+ 834  HOUSE2547_7880     0.00%    passed     83.75%
+ 835  HOUSE4788_10992    0.00%    passed     81.38%
+ 836  HOUSE1286_1263     0.00%    passed     66.18%
+ 837  HOUSE835_12954     0.00%    passed     88.64%
+ 838  HOUSE681_16589     0.00%    passed     85.62%
+ 839  HOUSE142_10372     0.00%    passed     72.78%
+ 840  HOUSE571_12593     0.00%    passed     86.56%
+ 841  HOUSE596_11849     0.00%    passed     86.03%
+ 842  HOUSE6019_12495    0.00%    passed     87.66%
+ 843  HOUSE2585_10330    0.00%    passed     91.34%
+ 844  HOUSE3870_13092    0.00%    passed     87.28%
+ 845  HOUSE3014_10346    0.00%    passed     77.66%
+ 846  HOUSE6004_5982     0.00%    passed     98.01%
+ 847  HOUSE73_11438      0.00%    passed     67.25%
+ 848  HOUSE6019_15115    0.00%    passed     70.82%
+ 849  HOUSE67_11933      0.00%    passed     68.57%
+ 850  HOUSE5512_5502     0.00%    passed     94.39%
+ 851  HOUSE4741_4712     0.00%    passed     90.78%
+ 852  HOUSE1722_10827    0.00%    passed     98.89%
+ 853  HOUSE2271_2283     0.00%    passed     75.10%
+ 854  HOUSE6019_14271    0.00%    passed     73.58%
+ 855  HOUSE902_12908     0.00%    passed     81.16%
+ 856  HOUSE5675_5662     0.00%    passed     84.19%
+ 857  HOUSE6019_14087    0.00%    passed     91.84%
+ 858  HOUSE1903_15209    0.00%    passed     79.10%
+ 859  HOUSE1839_14860    0.00%    passed     93.71%
+ 860  HOUSE5854_5835     0.00%    passed     95.04%
+ 861  HOUSE2646_13684    0.00%    passed     84.41%
+ 862  HOUSE2339_15837    0.00%    passed     89.30%
+ 863  HOUSE5795_9026     0.00%    passed     92.82%
+ 864  HOUSE5399_7751     0.00%    passed     81.61%
+ 865  HOUSE2259_11794    0.00%    passed     96.01%
+ 866  HOUSE2513_12096    0.00%    passed     93.69%
+ 867  HOUSE2079_13808    0.00%    passed     89.36%
+ 868  HOUSE4282_4241     0.00%    passed     90.31%
+ 869  HOUSE1686_11556    0.00%    passed     81.54%
+ 870  HOUSE1409_13529    0.00%    passed     99.91%
+ 871  HOUSE3415_8465     0.00%    passed     99.75%
+ 872  HOUSE3996_3953     0.00%    passed     88.88%
+ 873  HOUSE2739_6355     0.00%    passed     99.79%
+ 874  HOUSE1252_1238     0.00%    passed     87.43%
+ 875  HOUSE4830_9725     0.00%    passed     87.56%
+ 876  HOUSE4830_9693     0.00%    passed     58.05%
+ 877  HOUSE336_11716     0.00%    passed     84.37%
+ 878  HOUSE921_906       0.00%    passed     77.15%
+ 879  HOUSE642_9873      0.00%    passed     84.36%
+ 880  HOUSE860_11193     0.00%    passed     90.89%
+ 881  HOUSE5_12965       0.00%    passed     61.12%
+ 882  HOUSE4169_4129     0.00%    passed     97.40%
+ 883  HOUSE3216_13136    0.00%    passed     98.54%
+ 884  HOUSE1973_12723    0.00%    passed     99.47%
+ 885  HOUSE2391_7016     0.00%    passed     98.71%
+ 886  HOUSE2011_8741     0.00%    passed     84.17%
+ 887  HOUSE5298_11627    0.00%    passed     97.75%
+ 888  HOUSE2957_11039    0.00%    passed     94.22%
+ 889  HOUSE2546_12524    0.00%    passed     92.39%
+ 890  HOUSE1520_1499     0.00%    passed     98.42%
+ 891  HOUSE167_14700     0.00%    passed     98.19%
+ 892  HOUSE5200_12238    0.00%    passed     89.93%
+ 893  HOUSE5088_12604    0.00%    passed     84.62%
+ 894  HOUSE2779_7341     0.00%    passed     95.62%
+ 895  HOUSE1949_15682    0.00%    passed     83.82%
+ 896  HOUSE4637_4602     0.00%    passed     92.36%
+ 897  HOUSE1675_14218    0.00%    passed     92.39%
+ 898  HOUSE568_537       0.00%    passed     75.51%
+ 899  HOUSE4956_4932     0.00%    passed     86.22%
+ 900  HOUSE533_13175     0.00%    passed     94.12%
+ 901  HOUSE5819_5797     0.00%    passed     95.74%
+ 902  HOUSE846_9738      0.00%    passed     96.98%
+ 903  HOUSE4201_4154     0.00%    passed     99.61%
+ 904  HOUSE3882_6305     0.00%    passed     96.81%
+ 905  HOUSE350_7481      0.00%    passed     99.68%
+ 906  HOUSE498_10612     0.00%    passed     97.21%
+ 907  HOUSE4156_4116     0.00%    passed     89.36%
+ 908  HOUSE4156_4117     0.00%    passed     97.90%
+ 909  HOUSE2510_12800    0.00%    passed     87.23%
+ 910  HOUSE489_11402     0.00%    passed     95.06%
+ 911  HOUSE4879_11891    0.00%    passed     91.00%
+ 912  HOUSE4937_4910     0.00%    passed     99.66%
+ 913  HOUSE2032_2033     0.00%    passed     98.25%
+ 914  HOUSE1749_8170     0.00%    passed     73.95%
+ 915  HOUSE367_13074     0.00%    passed     92.56%
+ 916  HOUSE2507_9310     0.00%    passed     97.14%
+ 917  HOUSE3001_14252    0.00%    passed     97.36%
+ 918  HOUSE5591_13634    0.00%    passed     99.61%
+ 919  HOUSE6019_12380    0.00%    passed     99.58%
+ 920  HOUSE1076_14019    0.00%    passed     98.46%
+ 921  HOUSE764_745       0.00%    passed     92.72%
+ 922  HOUSE1357_7832     0.00%    passed     82.50%
+ 923  HOUSE5599_8110     0.00%    passed     86.74%
+ 924  HOUSE2213_2236     0.00%    passed     71.54%
+ 925  HOUSE1880_12841    0.00%    passed     74.35%
+ 926  HOUSE5422_10500    0.00%    passed     87.34%
+ 927  HOUSE4472_13210    0.00%    passed     93.81%
+ 928  HOUSE259_238       0.00%    passed     93.97%
+ 929  HOUSE4132_4093     0.00%    passed     95.84%
+ 930  HOUSE5763_11751    0.00%    passed     91.35%
+ 931  HOUSE3111_3082     0.00%    passed     93.11%
+ 932  HOUSE3607_6598     0.00%    passed     98.72%
+ 933  HOUSE346_15332     0.00%    passed     86.33%
+ 934  HOUSE1337_7480     0.00%    passed     98.66%
+ 935  HOUSE3886_3843     0.00%    passed     97.37%
+ 936  HOUSE2667_12691    0.00%    passed     81.85%
+ 937  HOUSE3674_3615     0.00%    passed     77.82%
+ 938  HOUSE3572_10924    0.00%    passed     92.97%
+ 939  HOUSE1002_10965    0.00%    passed     96.49%
+ 940  HOUSE5187_6898     0.00%    passed     90.55%
+ 941  HOUSE5050_5025     0.00%    passed     94.79%
+ 942  HOUSE50_9299       0.00%    passed     92.34%
+ 943  HOUSE1970_9898     0.00%    passed     81.90%
+ 944  HOUSE2470_12614    0.00%    passed     98.50%
+ 945  HOUSE3405_10341    0.00%    passed     90.06%
+ 946  HOUSE3405_14986    0.00%    passed     83.97%
+ 947  HOUSE931_13920     0.00%    passed     99.56%
+ 948  HOUSE4459_4429     0.00%    passed     97.98%
+ 949  HOUSE5833_11453    0.00%    passed     91.65%
+ 950  HOUSE974_959       0.00%    passed     93.96%
+ 951  HOUSE1867_11814    0.00%    passed     97.33%
+ 952  HOUSE5644_5625     0.00%    passed     90.63%
+ 953  HOUSE1575_13607    0.00%    passed     99.06%
+ 954  HOUSE1346_15855    0.00%    passed     99.87%
+ 955  HOUSE5056_10477    0.00%    passed     99.86%
+ 956  HOUSE5056_9727     0.00%    passed     96.29%
+ 957  HOUSE6019_12513    0.00%    passed     98.21%
+ 958  HOUSE1577_8430     0.00%    passed     96.41%
+ 959  HOUSE477_12404     0.00%    passed     98.86%
+ 960  HOUSE1436_10527    0.00%    passed     92.78%
+ 961  HOUSE3006_2997     0.00%    passed     92.48%
+ 962  HOUSE1371_7706     0.00%    passed     99.67%
+ 963  HOUSE2443_14820    0.00%    passed     99.90%
+ 964  HOUSE778_758       0.00%    passed     97.94%
+ 965  HOUSE292_263       0.00%    passed     88.50%
+ 966  HOUSE707_13887     0.00%    passed     95.57%
+ 967  HOUSE1075_12008    0.00%    passed     97.08%
+ 968  HOUSE4722_4696     0.00%    passed     97.54%
+ 969  HOUSE4075_4032     0.00%    passed     99.22%
+ 970  HOUSE3553_13657    0.00%    passed     99.54%
+ 971  HOUSE1128_10045    0.00%    passed     88.17%
+ 972  HOUSE3057_11502    0.00%    passed     97.50%
+ 973  HOUSE4912_4884     0.00%    passed     98.74%
+ 974  HOUSE4912_11431    0.00%    passed     98.88%
+ 975  HOUSE6019_12030    0.00%    passed     99.34%
+ 976  HOUSE4856_13909    0.00%    passed     97.81%
+ 977  HOUSE3850_9758     0.00%    passed     88.98%
+ 978  HOUSE52_14845      0.00%    passed     80.06%
+ 979  HOUSE1533_1517     0.00%    passed     91.03%
+ 980  HOUSE5311_5295     0.00%    passed     72.75%
+ 981  HOUSE6019_11750    0.00%    passed     97.30%
+ 982  HOUSE2723_7764     0.00%    passed     97.21%
+ 983  HOUSE1574_14963    0.00%    passed     95.35%
+ 984  HOUSE5646_5629     0.00%    passed     95.79%
+ 985  HOUSE2572_11605    0.00%    passed     85.84%
+ 986  HOUSE682_8077      0.00%    passed     99.02%
+ 987  HOUSE2468_2488     0.00%    passed     88.48%
+ 988  HOUSE2468_2489     0.00%    passed     82.60%
+ 989  HOUSE5497_5490     0.00%    passed     91.46%
+ 990  HOUSE4157_4119     0.00%    passed     82.30%
+ 991  HOUSE1909_11225    0.00%    passed     99.84%
+ 992  HOUSE1565_13581    0.00%    passed     99.33%
+ 993  HOUSE6019_10913    0.00%    passed     92.95%
+ 994  HOUSE3943_6264     0.00%    passed     99.44%
+ 995  HOUSE1721_15531    0.00%    passed     86.75%
+ 996  HOUSE574_8033      0.00%    passed     96.62%
+ 997  HOUSE1889_12464    0.00%    passed     97.39%
+ 998  HOUSE2434_10256    0.00%    passed     64.34%
+ 999  HOUSE2495_13298    0.00%    passed     98.61%
+1000  HOUSE3771_9360     0.00%    passed     94.10%
+1001  HOUSE1775_1780     0.00%    passed     91.83%
+1002  HOUSE326_10245     0.00%    passed     70.92%
+1003  HOUSE2655_2659     0.00%    passed     73.02%
+1004  HOUSE315_13763     0.00%    passed     86.43%
+1005  HOUSE1906_14358    0.00%    passed     93.77%
+1006  HOUSE181_12617     0.00%    passed     94.51%
+1007  HOUSE1248_9731     0.00%    passed     99.94%
+1008  HOUSE1652_13702    0.00%    passed     60.75%
+1009  HOUSE1404_1386     0.00%    passed     82.50%
+1010  HOUSE5186_5156     0.00%    passed     98.01%
+1011  HOUSE2640_14111    0.00%    passed     92.20%
+1012  HOUSE482_13441     0.00%    passed     88.55%
+1013  HOUSE6019_13805    0.00%    passed     93.72%
+1014  HOUSE4547_13479    0.00%    passed     96.07%
+1015  HOUSE3788_11388    0.00%    passed     91.87%
+1016  HOUSE3813_9207     0.00%    passed     90.73%
+1017  HOUSE560_12883     0.00%    passed     95.89%
+1018  HOUSE2626_12500    0.00%    passed     78.54%
+1019  HOUSE3787_11067    0.00%    passed     84.51%
+1020  HOUSE4318_4275     0.00%    passed     64.57%
+1021  HOUSE1339_13489    0.00%    passed     79.10%
+1022  HOUSE5261_12361    0.00%    passed     88.89%
+1023  HOUSE4461_14721    0.00%    passed     91.75%
+1024  HOUSE997_973       0.00%    passed     96.94%
+1025  HOUSE949_13629     0.00%    passed     99.89%
+1026  HOUSE208_190       0.00%    passed     95.97%
+1027  HOUSE687_652       0.00%    passed     97.28%
+1028  HOUSE1741_1732     0.00%    passed     99.38%
+1029  HOUSE2663_2672     0.00%    passed     98.20%
+1030  HOUSE5660_14846    0.00%    passed     98.76%
+1031  HOUSE4611_13583    0.00%    passed     92.15%
+1032  HOUSE360_9085      0.00%    passed     90.91%
+1033  HOUSE3184_9567     0.00%    passed     75.04%
+1034  HOUSE485_457       0.00%    passed     98.60%
+1035  HOUSE2071_2072     0.00%    passed     86.03%
+1036  HOUSE4835_8202     0.00%    passed     65.31%
+1037  HOUSE944_14045     0.00%    passed     73.91%
+1038  HOUSE944_15263     0.00%    passed     82.88%
+1039  HOUSE1285_10559    0.00%    passed     92.48%
+1040  HOUSE1792_12635    0.00%    passed     98.71%
+****  TOTAL              0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+Reading partition gag (model=GTR+R20, aln=, seq=DNA, pos=1-1479) ...
+1040 sequences and 1479 sites extracted
+
+Reading partition pol (model=GTR+R20, aln=, seq=DNA, pos=1480-4479) ...
+1040 sequences and 3000 sites extracted
+
+Reading partition env (model=GTR+R20, aln=, seq=DNA, pos=4480-6987) ...
+1040 sequences and 2508 sites extracted
+Degree of missing data: 0.000
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 4.346 seconds
+
+NOTE: 3124 MB RAM is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -913167.053
+Current log-likelihood at step 1: -900532.154
+Current log-likelihood at step 2: -900017.909
+Current log-likelihood at step 3: -899843.206
+Current log-likelihood at step 4: -899761.712
+Current log-likelihood at step 5: -899708.061
+Current log-likelihood at step 6: -899624.674
+Current log-likelihood at step 7: -899590.157
+Current log-likelihood at step 8: -899564.601
+Current log-likelihood at step 9: -899543.076
+Current log-likelihood at step 10: -899534.062
+Current log-likelihood at step 11: -899479.221
+Current log-likelihood at step 12: -899464.195
+Current log-likelihood at step 13: -899455.694
+Current log-likelihood at step 14: -899433.601
+Current log-likelihood at step 15: -899427.007
+Current log-likelihood at step 16: -899425.325
+Current log-likelihood at step 17: -899424.956
+Current log-likelihood at step 18: -899424.588
+Current log-likelihood at step 19: -899423.565
+Current log-likelihood at step 20: -899422.575
+Current log-likelihood at step 21: -899406.429
+Current log-likelihood at step 22: -899403.857
+Current log-likelihood at step 23: -899388.857
+Current log-likelihood at step 24: -899384.549
+Current log-likelihood at step 25: -899379.158
+Current log-likelihood at step 26: -899363.681
+Current log-likelihood at step 27: -899357.059
+Current log-likelihood at step 28: -899356.636
+Current log-likelihood at step 29: -899356.485
+Current log-likelihood at step 30: -899356.242
+Current log-likelihood at step 31: -899355.806
+Current log-likelihood at step 32: -899355.512
+Current log-likelihood at step 33: -899355.227
+Current log-likelihood at step 34: -899355.025
+Current log-likelihood at step 35: -899354.824
+Current log-likelihood at step 36: -899354.630
+Current log-likelihood at step 37: -899354.434
+Current log-likelihood at step 38: -899354.245
+Current log-likelihood at step 39: -899354.047
+Current log-likelihood at step 40: -899353.692
+Current log-likelihood at step 41: -899353.498
+Current log-likelihood at step 42: -899353.315
+Current log-likelihood at step 43: -899353.120
+Current log-likelihood at step 44: -899352.932
+Current log-likelihood at step 45: -899352.737
+Current log-likelihood at step 46: -899352.553
+Current log-likelihood at step 47: -899352.363
+Current log-likelihood at step 48: -899352.180
+Current log-likelihood at step 49: -899351.993
+Current log-likelihood at step 50: -899351.812
+Current log-likelihood at step 51: -899351.619
+Current log-likelihood at step 52: -899351.426
+Current log-likelihood at step 53: -899351.248
+Current log-likelihood at step 54: -899349.791
+Current log-likelihood at step 55: -899342.057
+Current log-likelihood at step 56: -899340.551
+Current log-likelihood at step 57: -899325.618
+Current log-likelihood at step 58: -899320.364
+Current log-likelihood at step 59: -899318.932
+Current log-likelihood at step 60: -899318.836
+Partition-specific rates:  0.840 0.898 1.217
+Parameters optimization took 59 rounds (8200.916 sec)
+
+8208.967 seconds (logl: -899318.836)
+Generating 99 parsimony trees... (0 duplicated parsimony trees)
+Time: 423.443
+Computing logl of parsimony trees ... 
+Average wall time for computing logl of 1 parsimony tree: 13.426
+
+Optimizing top parsimony trees with NNI...
+Iteration 1 / LogL: -898990.069 / Time: 2h:47m:28s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -898990.066
+Current log-likelihood at step 1: -898989.905
+Current log-likelihood at step 2: -898989.833
+Partition-specific rates:  0.840 0.897 1.217
+Parameters optimization took 1 rounds (183.018 sec)
+
+188.080 seconds (logl: -898989.833)
+BETTER TREE FOUND at iteration 1: -898989.833
+Iteration 2 / LogL: -898972.749 / Time: 2h:51m:56s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -898972.747
+Current log-likelihood at step 1: -898970.450
+Current log-likelihood at step 2: -898970.382
+Partition-specific rates:  0.842 0.895 1.219
+Parameters optimization took 1 rounds (228.502 sec)
+
+233.513 seconds (logl: -898970.382)
+BETTER TREE FOUND at iteration 2: -898970.382
+Iteration 3 / LogL: -898974.097 / Time: 2h:57m:12s
+Iteration 4 / LogL: -898978.932 / Time: 2h:58m:31s
+Iteration 5 / LogL: -898974.824 / Time: 2h:59m:44s
+Iteration 6 / LogL: -898971.885 / Time: 3h:1m:7s
+Iteration 7 / LogL: -898980.875 / Time: 3h:2m:35s
+Iteration 8 / LogL: -899072.840 / Time: 3h:3m:52s
+Iteration 9 / LogL: -898970.643 / Time: 3h:5m:13s
+Iteration 10 / LogL: -899062.613 / Time: 3h:6m:25s
+Iteration 11 / LogL: -899073.290 / Time: 3h:7m:41s
+Iteration 12 / LogL: -898970.653 / Time: 3h:9m:4s
+Iteration 13 / LogL: -898982.578 / Time: 3h:10m:23s
+Iteration 14 / LogL: -899064.419 / Time: 3h:11m:51s
+Iteration 15 / LogL: -898969.747 / Time: 3h:13m:14s
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -898969.745
+Current log-likelihood at step 1: -898969.645
+Current log-likelihood at step 2: -898969.538
+Current log-likelihood at step 3: -898969.461
+Partition-specific rates:  0.842 0.895 1.219
+Parameters optimization took 2 rounds (267.524 sec)
+
+272.099 seconds (logl: -898969.461)
+BETTER TREE FOUND at iteration 15: -898969.461
+Iteration 16 / LogL: -898978.795 / Time: 3h:19m:15s
+Iteration 17 / LogL: -899069.009 / Time: 3h:20m:39s
+Iteration 18 / LogL: -899059.736 / Time: 3h:21m:52s
+Iteration 19 / LogL: -899069.685 / Time: 3h:23m:16s
+Iteration 20 / LogL: -899072.877 / Time: 3h:24m:32s
+Average CPU time for 1 NNI search: 113.451
+Finish initializing candidate tree set. Number of distinct locally optimal trees: 20
+Current best tree score: -898969.461 / CPU time: 4019.629
+Estimate model parameters (epsilon = 0.001)
+Initial log-likelihood: -898967.377
+Current log-likelihood at step 1: -898967.304
+Current log-likelihood at step 2: -898967.229
+Current log-likelihood at step 3: -898967.160
+Current log-likelihood at step 4: -898966.650
+Current log-likelihood at step 5: -898966.578
+Current log-likelihood at step 6: -898966.305
+Current log-likelihood at step 7: -898966.240
+Current log-likelihood at step 8: -898966.172
+Current log-likelihood at step 9: -898966.110
+Current log-likelihood at step 10: -898966.047
+Current log-likelihood at step 11: -898965.989
+Current log-likelihood at step 12: -898965.928
+Current log-likelihood at step 13: -898965.869
+Current log-likelihood at step 14: -898965.811
+Current log-likelihood at step 15: -898965.755
+Current log-likelihood at step 16: -898965.694
+Current log-likelihood at step 17: -898965.634
+Current log-likelihood at step 18: -898965.553
+Current log-likelihood at step 19: -898965.479
+Current log-likelihood at step 20: -898965.423
+Current log-likelihood at step 21: -898965.370
+Current log-likelihood at step 22: -898965.313
+Current log-likelihood at step 23: -898965.259
+Current log-likelihood at step 24: -898965.202
+Current log-likelihood at step 25: -898950.008
+Current log-likelihood at step 26: -898949.901
+Current log-likelihood at step 27: -898949.767
+Current log-likelihood at step 28: -898943.505
+Current log-likelihood at step 29: -898941.476
+Current log-likelihood at step 30: -898941.418
+Current log-likelihood at step 31: -898941.371
+Current log-likelihood at step 32: -898941.323
+Current log-likelihood at step 33: -898941.280
+Current log-likelihood at step 34: -898941.237
+Current log-likelihood at step 35: -898941.189
+Current log-likelihood at step 36: -898941.143
+Current log-likelihood at step 37: -898941.101
+Current log-likelihood at step 38: -898941.059
+Current log-likelihood at step 39: -898941.022
+Current log-likelihood at step 40: -898940.980
+Current log-likelihood at step 41: -898940.942
+Current log-likelihood at step 42: -898940.903
+Current log-likelihood at step 43: -898940.868
+Current log-likelihood at step 44: -898940.831
+Current log-likelihood at step 45: -898940.796
+Current log-likelihood at step 46: -898940.758
+Current log-likelihood at step 47: -898940.723
+Current log-likelihood at step 48: -898940.687
+Current log-likelihood at step 49: -898940.654
+Current log-likelihood at step 50: -898940.619
+Current log-likelihood at step 51: -898940.587
+Current log-likelihood at step 52: -898940.554
+Current log-likelihood at step 53: -898940.522
+Current log-likelihood at step 54: -898940.490
+Current log-likelihood at step 55: -898940.459
+Current log-likelihood at step 56: -898940.427
+Current log-likelihood at step 57: -898940.398
+Current log-likelihood at step 58: -898940.367
+Current log-likelihood at step 59: -898940.338
+Current log-likelihood at step 60: -898940.309
+Current log-likelihood at step 61: -898940.281
+Current log-likelihood at step 62: -898940.250
+Current log-likelihood at step 63: -898937.263
+Current log-likelihood at step 64: -898937.227
+Current log-likelihood at step 65: -898937.193
+Current log-likelihood at step 66: -898937.158
+Current log-likelihood at step 67: -898936.736
+Current log-likelihood at step 68: -898936.516
+Current log-likelihood at step 69: -898936.286
+Current log-likelihood at step 70: -898936.254
+Current log-likelihood at step 71: -898936.218
+Current log-likelihood at step 72: -898936.167
+Current log-likelihood at step 73: -898936.136
+Current log-likelihood at step 74: -898936.112
+Current log-likelihood at step 75: -898936.090
+Current log-likelihood at step 76: -898936.066
+Current log-likelihood at step 77: -898936.041
+Current log-likelihood at step 78: -898936.015
+Current log-likelihood at step 79: -898935.995
+Current log-likelihood at step 80: -898935.972
+Current log-likelihood at step 81: -898935.952
+Current log-likelihood at step 82: -898935.930
+Current log-likelihood at step 83: -898935.911
+Current log-likelihood at step 84: -898935.888
+Current log-likelihood at step 85: -898935.869
+Current log-likelihood at step 86: -898935.846
+Current log-likelihood at step 87: -898935.827
+Current log-likelihood at step 88: -898935.584
+Current log-likelihood at step 89: -898935.559
+Current log-likelihood at step 90: -898935.527
+Current log-likelihood at step 91: -898935.502
+Current log-likelihood at step 92: -898935.474
+Current log-likelihood at step 93: -898935.455
+Current log-likelihood at step 94: -898935.426
+Current log-likelihood at step 95: -898935.407
+Current log-likelihood at step 96: -898935.379
+Current log-likelihood at step 97: -898935.360
+Current log-likelihood at step 98: -898935.339
+Current log-likelihood at step 99: -898935.320
+Partition-specific rates:  0.855 0.871 1.240
+Parameters optimization took 99 rounds (8912.672 sec)
+
+8917.144 seconds (logl: -898935.320)
+BETTER TREE FOUND at iteration 21: -898935.320 / CPU time: 21287s
+Iteration 30 / LogL: -899009.519 / Time: 6h:20m:34s (19h:53m:51s left)
+Iteration 40 / LogL: -898940.755 / Time: 6h:48m:24s (14h:8m:0s left)
+Iteration 50 / LogL: -898935.322 / Time: 7h:16m:11s (10h:31m:51s left)
+Iteration 60 / LogL: -898944.591 / Time: 7h:43m:33s (7h:59m:9s left)
+Iteration 70 / LogL: -898935.325 / Time: 8h:11m:8s (6h:2m:56s left)
+Iteration 80 / LogL: -898971.096 / Time: 8h:38m:40s (4h:29m:7s left)
+Iteration 90 / LogL: -898936.826 / Time: 9h:6m:15s (3h:10m:13s left)
+Iteration 100 / LogL: -898936.108 / Time: 9h:33m:45s (2h:1m:40s left)
+Iteration 110 / LogL: -898939.007 / Time: 10h:1m:6s (1h:0m:39s left)
+Iteration 120 / LogL: -898936.301 / Time: 10h:28m:34s (0h:5m:16s left)
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.001)
+Initial log-likelihood: -898935.320
+Current log-likelihood at step 1: -898935.301
+Current log-likelihood at step 2: -898935.281
+Current log-likelihood at step 3: -898935.260
+Current log-likelihood at step 4: -898935.239
+Current log-likelihood at step 5: -898935.221
+Current log-likelihood at step 6: -898935.204
+Current log-likelihood at step 7: -898935.188
+Current log-likelihood at step 8: -898935.170
+Current log-likelihood at step 9: -898935.154
+Current log-likelihood at step 10: -898935.136
+Current log-likelihood at step 11: -898935.118
+Current log-likelihood at step 12: -898935.100
+Current log-likelihood at step 13: -898935.082
+Current log-likelihood at step 14: -898935.061
+Current log-likelihood at step 15: -898935.044
+Current log-likelihood at step 16: -898935.026
+Current log-likelihood at step 17: -898935.010
+Current log-likelihood at step 18: -898934.996
+Current log-likelihood at step 19: -898934.980
+Current log-likelihood at step 20: -898934.965
+Current log-likelihood at step 21: -898934.950
+Current log-likelihood at step 22: -898934.938
+Current log-likelihood at step 23: -898934.923
+Current log-likelihood at step 24: -898934.910
+Current log-likelihood at step 25: -898934.887
+Current log-likelihood at step 26: -898934.869
+Current log-likelihood at step 27: -898934.855
+Current log-likelihood at step 28: -898934.842
+Current log-likelihood at step 29: -898934.828
+Current log-likelihood at step 30: -898934.817
+Current log-likelihood at step 31: -898934.803
+Current log-likelihood at step 32: -898934.703
+Current log-likelihood at step 33: -898934.689
+Current log-likelihood at step 34: -898934.673
+Current log-likelihood at step 35: -898934.660
+Current log-likelihood at step 36: -898934.648
+Current log-likelihood at step 37: -898934.633
+Current log-likelihood at step 38: -898934.622
+Current log-likelihood at step 39: -898934.610
+Current log-likelihood at step 40: -898934.598
+Current log-likelihood at step 41: -898934.586
+Current log-likelihood at step 42: -898934.575
+Current log-likelihood at step 43: -898934.563
+Current log-likelihood at step 44: -898934.552
+Current log-likelihood at step 45: -898934.541
+Current log-likelihood at step 46: -898934.530
+Current log-likelihood at step 47: -898934.519
+Current log-likelihood at step 48: -898934.502
+Current log-likelihood at step 49: -898934.485
+Current log-likelihood at step 50: -898934.475
+Current log-likelihood at step 51: -898934.464
+Current log-likelihood at step 52: -898934.454
+Current log-likelihood at step 53: -898934.440
+Current log-likelihood at step 54: -898934.429
+Current log-likelihood at step 55: -898934.414
+Current log-likelihood at step 56: -898934.404
+Current log-likelihood at step 57: -898934.389
+Current log-likelihood at step 58: -898934.377
+Current log-likelihood at step 59: -898934.360
+Current log-likelihood at step 60: -898934.348
+Current log-likelihood at step 61: -898934.336
+Current log-likelihood at step 62: -898934.326
+Current log-likelihood at step 63: -898934.316
+Current log-likelihood at step 64: -898934.307
+Current log-likelihood at step 65: -898934.297
+Current log-likelihood at step 66: -898934.288
+Current log-likelihood at step 67: -898934.279
+Current log-likelihood at step 68: -898934.269
+Current log-likelihood at step 69: -898934.259
+Current log-likelihood at step 70: -898934.250
+Current log-likelihood at step 71: -898934.242
+Current log-likelihood at step 72: -898934.234
+Current log-likelihood at step 73: -898933.557
+Current log-likelihood at step 74: -898933.549
+Current log-likelihood at step 75: -898933.541
+Current log-likelihood at step 76: -898933.532
+Current log-likelihood at step 77: -898933.524
+Current log-likelihood at step 78: -898933.517
+Current log-likelihood at step 79: -898933.507
+Current log-likelihood at step 80: -898933.500
+Current log-likelihood at step 81: -898933.489
+Current log-likelihood at step 82: -898933.482
+Current log-likelihood at step 83: -898933.474
+Current log-likelihood at step 84: -898933.462
+Current log-likelihood at step 85: -898933.454
+Current log-likelihood at step 86: -898933.448
+Current log-likelihood at step 87: -898933.441
+Current log-likelihood at step 88: -898933.435
+Current log-likelihood at step 89: -898933.429
+Current log-likelihood at step 90: -898933.422
+Current log-likelihood at step 91: -898933.414
+Current log-likelihood at step 92: -898933.409
+Current log-likelihood at step 93: -898933.402
+Current log-likelihood at step 94: -898933.397
+Current log-likelihood at step 95: -898933.391
+Current log-likelihood at step 96: -898933.385
+Current log-likelihood at step 97: -898933.251
+Current log-likelihood at step 98: -898933.239
+Current log-likelihood at step 99: -898933.228
+Partition-specific rates:  0.852 0.871 1.242
+Parameters optimization took 99 rounds (8347.389 sec)
+
+8352.234 seconds (logl: -898933.228)
+BEST SCORE FOUND : -898933.228
+Total tree length: 31.389
+
+CPU time used for tree search: 29265.203 sec (8h:7m:45s)
+Wall-clock time used for tree search: 29671.722 sec (8h:14m:31s)
+Total CPU time used: 45813.778 sec (12h:43m:33s)
+Total wall-clock time used: 46239.843 sec (12h:50m:39s)
+
+Analysis results written to: 
+  IQ-TREE report:                vill_4_gene_r20.iqtree
+  Maximum-likelihood tree:       vill_4_gene_r20.treefile
+  Screen log file:               vill_4_gene_r20.log
+
+Date and Time: Wed Jun 24 23:35:37 2015

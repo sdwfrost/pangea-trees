@@ -1,0 +1,1 @@
+iqtree-omp -nt 1 -s ../../data/vill_4.phy -spp vill_partition_gene_r20.nex -pre vill_4_gene_r20
